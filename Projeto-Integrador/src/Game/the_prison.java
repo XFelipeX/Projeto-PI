@@ -21,6 +21,7 @@ public class the_prison {
                     break;
                 case 2:
                     System.out.println("Iniciar o jogo");
+                    System.out.println();
                     break;
                 case 3:
                     System.out.println("Colocar os dreditos do jogo");
