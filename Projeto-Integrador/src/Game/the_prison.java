@@ -5,14 +5,16 @@ public class the_prison {
 	public static void main(String[] args) {
 	Scanner input = new Scanner(System.in);
 
-        System.out.println("BEM VINDO AO JOGO 'THE PRISON'.");
+		    System.out.println("------------------------------");
+		    System.out.println("| | | | | |THE PRISON| | | | |");
+		    System.out.println("------------------------------");
         int opcao;
         do {
-            System.out.println("1 - InstruÃ§Ã£o do Jogo: ");
-            System.out.println("2 - ComeÃ§ar o jogo: ");
-            System.out.println("3 - CrÃ©ditos do jogo: ");
+            System.out.println("1 - Instruções do Jogo: ");
+            System.out.println("2 - Começar o jogo: ");
+            System.out.println("3 - Créditos do jogo: ");
             System.out.println("4 - Sair: ");
-            System.out.println("Escolha uma opÃ§Ã£o: ");
+            System.out.println("Escolha uma opção: ");
             opcao = input.nextInt();
 
             switch (opcao) {
@@ -33,13 +35,13 @@ public class the_prison {
                     		"Boa sorte, detento!");
                     break;
                 case 3:
-                    System.out.println("Colocar os dreditos do jogo");
+                    System.out.println("Colocar os créditos do jogo");
                     break;
                 case 4:
-                    System.out.println("VocÃª estÃ¡ saindo do jogo.");
+                    System.out.println("você está saindo do jogo.");
                     break;
                 default:
-                    System.out.println("OpÃ§Ã£o invÃ¡lida.");
+                    System.out.println("Opção inválida.");
 
             }
 
