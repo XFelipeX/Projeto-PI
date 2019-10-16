@@ -1,8 +1,8 @@
 package Game;
 import java.util.Scanner;
 public class the_prison {
-
-	public static void main(String[] args) {
+  
+	public static void main(String[] args) { // testando codigo
 	Scanner input = new Scanner(System.in);
 
 		    System.out.println("------------------------------");
