@@ -2,9 +2,9 @@ package Game;
 import java.util.Scanner;
 public class the_prison {
   
-	public static void main(String[] args) { // testando codigo
+	public static void main(String[] args) { 
 	Scanner input = new Scanner(System.in);
-
+			int navegacao = 1;
 		    System.out.println("------------------------------");
 		    System.out.println("| | | | | |THE PRISON| | | | |");
 		    System.out.println("------------------------------");
@@ -19,10 +19,15 @@ public class the_prison {
 
             switch (opcao) {
                 case 1:
+                	do {
                 	System.out.println("--------INSTRUÇÕES---------");
                     System.out.println("1 - Cada questão vale 100 pontos de respeito.");
                     System.out.println("2 - É necessário atingir 500 pontos de respeito para concluir o jogo.");
                     System.out.println("3 - Caso erre uma pergunta você irá perder 50 pontos. ");
+                    System.out.println("----------------------------------------------------------------------");
+                    System.out.println("Digite 0 para voltar.");
+                    navegacao = input.nextInt();
+                	}while(navegacao!=0);
                     break;
                 case 2:
                 	// inicio do jogo
