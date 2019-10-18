@@ -31,6 +31,8 @@ public class the_prison {
                     break;
                 case 2:
                 	// inicio do jogo
+                	do {
+         System.out.println("-----------------------------------------------------------------------------------------------------------------");
                 	System.out.println("\r\n" +  // Introdução e objetivo inicial do jogo
                     		"Você é um estudante da área de TI e acaba de ser preso por hackear uma base militar situada em sua cidade,\r\n"+
                     		"como consequência foi condenado a prisão e mandado para uma prisão de segurança máxima no estado do Arizona.\r\n" + 
@@ -43,6 +45,10 @@ public class the_prison {
                     		"a outras pessoas e recursos para poder sair da prisão caso não seja descoberto.\r\n" + 
                     		"Boa sorte, detento!");
          System.out.println("-----------------------------------------------------------------------------------------------------------------");
+         System.out.println("Digite 0 para voltar.\r\n"+
+         "Digite 1 para iniciar o jogo.");
+         navegacao = input.nextInt();
+                	}while(navegacao!=0);
                     break;
                     
                 case 3:
