@@ -76,6 +76,18 @@ public class the_prison {
 						alternativa.add("long.");
 						alternativa.add("double.");
 
+
+						System.out.println("\n");
+						System.out.println(
+								"-----------------------------------------------------------------------------------------------------------------");
+						
+						System.out.println("O Guarda Bill Gates está com dificuldades na faculdade, ajude ele a solucionar esse problema!");
+						
+						System.out.println(
+								"-----------------------------------------------------------------------------------------------------------------");
+						System.out.println("\n");
+						
+						
 						do {
 							Collections.shuffle(alternativa);
 							System.out.println("Em Java, uma variável de ponto flutuante é uma variável do tipo: ");
