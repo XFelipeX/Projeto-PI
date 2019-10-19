@@ -69,21 +69,23 @@ public class the_prison {
 						boolean acertou = false;
 						int contador = 0;
 
-						List alternativa = new ArrayList();
-						alternativa.add("boolean.");// correta
-						alternativa.add("byte.");
-						alternativa.add("short.");
-						alternativa.add("long.");
-						alternativa.add("double.");
+						List alternativa1 = new ArrayList();
+						alternativa1.add("boolean.");// correta
+						alternativa1.add("byte.");
+						alternativa1.add("short.");
+						alternativa1.add("long.");
+						alternativa1.add("double.");
+						
+						
 
 						do {
-							Collections.shuffle(alternativa);
+							Collections.shuffle(alternativa1);
 							System.out.println("Em Java, uma variável de ponto flutuante é uma variável do tipo: ");
-							System.out.println("a) " + alternativa.get(0));
-							System.out.println("b) " + alternativa.get(1));
-							System.out.println("c) " + alternativa.get(2));
-							System.out.println("d) " + alternativa.get(3));
-							System.out.println("e) " + alternativa.get(4));
+							System.out.println("a) " + alternativa1.get(0));
+							System.out.println("b) " + alternativa1.get(1));
+							System.out.println("c) " + alternativa1.get(2));
+							System.out.println("d) " + alternativa1.get(3));
+							System.out.println("e) " + alternativa1.get(4));
 
 							System.out.println("Qual a alternativa certa?: ");
 							String resposta = imput.next();
@@ -91,7 +93,7 @@ public class the_prison {
 							switch (resposta) {
 							case "a":
 							case "A":
-								if (alternativa.get(0).equals("double.")) {
+								if (alternativa1.get(0).equals("double.")) {
 									System.out.println("Resposta Correta.");
 									acertou = true;
 								} else {
@@ -100,7 +102,7 @@ public class the_prison {
 								break;
 							case "b":
 							case "B":
-								if (alternativa.get(1).equals("double.")) {
+								if (alternativa1.get(1).equals("double.")) {
 									System.out.println("Resposta Correta.");
 									acertou = true;
 								} else {
@@ -109,7 +111,7 @@ public class the_prison {
 								break;
 							case "c":
 							case "C":
-								if (alternativa.get(2).equals("double.")) {
+								if (alternativa1.get(2).equals("double.")) {
 									System.out.println("Resposta Correta.");
 									acertou = true;
 								} else {
@@ -118,7 +120,7 @@ public class the_prison {
 								break;
 							case "d":
 							case "D":
-								if (alternativa.get(3).equals("double.")) {
+								if (alternativa1.get(3).equals("double.")) {
 									System.out.println("Resposta Correta.");
 									acertou = true;
 								} else {
@@ -127,7 +129,7 @@ public class the_prison {
 								break;
 							case "e":
 							case "E":
-								if (alternativa.get(4).equals("double.")) {
+								if (alternativa1.get(4).equals("double.")) {
 									System.out.println("Resposta Correta.");
 									acertou = true;
 								} else {
@@ -139,7 +141,7 @@ public class the_prison {
 							}
 							contador++;
 						} while (!acertou && contador <= 2);
-						System.out.println("GAME OVER.");
+						if((acertou==false)&&(contador==2))System.out.println("GAME OVER.");
 						break;
 
 					}
