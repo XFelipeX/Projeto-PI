@@ -8,10 +8,13 @@ import java.util.Scanner;
 public class the_prison {
 
 	public static void main(String[] args) {
-
-		Scanner imput = new Scanner(System.in);
-		int navegacao = 1;
-		int ponto = 500, total = 0, pontoG = 100, pontoP = 50;// testando, depois mudar
+		/*pontoG == pontos ganhos
+		  pontoP == pontor perdidos
+		  testando, depois mudar*/
+		Scanner imput = new Scanner(System.in);				   					  
+		int navegacao = 1;                                      
+		int ponto = 500, total = 0, pontoG = 100, pontoP = 50;  
+		 														
 
 		System.out.println(
 				"----------------------------------------------------------------------------------------------------------------");
@@ -43,7 +46,9 @@ public class the_prison {
 					System.out.println("\r");
 					System.out.println("\r - É necessário atingir 500 pontos de respeito para concluir o jogo. |");
 					System.out.println("\r");
-					System.out.println("\r - Caso erre uma pergunta você irá perder 50 pontos.                 |");
+					System.out.println("\r - Caso erre uma pergunta você perde 50 pontos.                 |");
+					System.out.println("\r");
+					System.out.println("\r - Caso acerte uma pergunta você ganha 100 pontos.                 |");
 					System.out.println("\r");
 					System.out.println("-------------------------------------------------------------------------");
 					System.out.println("\n");
@@ -127,6 +132,166 @@ public class the_prison {
 									acertou = true;
 									total = ponto + pontoG;
 									ponto = total;
+									System.out.println("|"+total + " => pontos|");
+									System.out.println("\r\n");				// testando, para ver se roda certo.
+								} else {
+									System.out.println("\n");
+									System.out.println("Resposta Incorreta.");
+									System.out.println("\n");
+									total = ponto - pontoP;
+									ponto = total;
+									System.out.println("|"+total + " => pontos|");
+									System.out.println("\r\n");				// testando, para ver se raoda certo.
+								}
+								break;
+							case "b":
+							case "B":
+								if (alternativa1.get(1).equals("double.")) {
+									System.out.println("Resposta Correta.");
+									System.out.println("\n");
+									acertou = true;
+									total = ponto + pontoG;
+									ponto = total;
+									System.out.println("|"+total + " => pontos|");
+									System.out.println("\r\n");
+								} else {
+									System.out.println("\n");
+									System.out.println("Resposta Incorreta.");
+									System.out.println("\n");
+									total = ponto - pontoP;
+									ponto = total;
+									System.out.println("|"+total + " => pontos|");
+									System.out.println("\r\n");
+								}
+								break;
+							case "c":
+							case "C":
+								if (alternativa1.get(2).equals("double.")) {
+									System.out.println("Resposta Correta.");
+									System.out.println("\n");
+									acertou = true;
+									total = ponto + pontoG;
+									ponto = total;
+									System.out.println("|"+total + " => pontos|");
+									System.out.println("\r\n");
+								} else {
+									System.out.println("\n");
+									System.out.println("Resposta Incorreta.");
+									System.out.println("\n");
+									total = ponto - pontoP;
+									ponto = total;
+									System.out.println("|"+total + " => pontos|");
+									System.out.println("\r\n");
+								}
+								break;
+							case "d":
+							case "D":
+								if (alternativa1.get(3).equals("double.")) {
+									System.out.println("Resposta Correta.");
+									System.out.println("\n");
+									acertou = true;
+									total = ponto + pontoG;
+									ponto = total;
+									System.out.println("|"+total + " => pontos|");
+									System.out.println("\r\n");
+								} else {
+									System.out.println("\n");
+									System.out.println("Resposta Incorreta.");
+									System.out.println("\n");
+									total = ponto - pontoP;
+									ponto = total;
+									System.out.println("|"+total + " => pontos|");
+									System.out.println("\r\n");
+								}
+								break;
+							case "e":
+							case "E":
+								if (alternativa1.get(4).equals("double.")) {
+									System.out.println("Resposta Correta.");
+									System.out.println("\n");
+									acertou = true;
+									total = ponto + pontoG;
+									ponto = total;
+									System.out.println("|"+total + " => pontos|");
+									System.out.println("\r\n");
+								} else {
+									System.out.println("\n");
+									System.out.println("Resposta Incorreta.");
+									System.out.println("\n");
+									total = ponto - pontoP;
+									ponto = total;
+									System.out.println("|"+total + " => pontos|");
+									System.out.println("\r\n");
+								}
+								break;
+							default:
+								System.out.println("\n");
+								System.out.println("Escolha Invalida.");
+								System.out.println("\n");
+							}
+							contador++;
+						} while (!acertou && contador <= 2);
+						if (acertou == false) {
+							System.out.println("GAME OVER.");
+							break;
+
+						}
+
+					}
+					System.out.println("Parabéns voce passou do primeiro nível.");
+					System.out.println("Digite 1 para continuar.");
+					navegacao = imput.nextInt();
+					if (navegacao == 1) {
+//2 questao
+						boolean acertou = false;
+						int contador = 0;
+						
+						List alternativa2 = new ArrayList();
+						alternativa2.add("int, string, long e real.");             
+						alternativa2.add("char, int, real e bit.");                 
+						alternativa2.add("boolean, double, float e byte.");    //resposta correta      
+						alternativa2.add("real, short, long e char.");
+						alternativa2.add("string, long int, short int e float.");
+
+						System.out.println("\n");
+						System.out.println(
+								"-----------------------------------------------------------------------------------------------------------------");
+
+						System.out.println(
+								"Mark Zuckerberg: Minha filha está tendo problemas para resolver um \r\n"
+								+ "exercício da escola, me ajude com isto \r\n"
+								+ "e posso conseguir com que você possa acessar outra ala da prisão.\r\n"
+								+ "mas nada além disso detento!\r\n");
+
+						System.out.println(
+								"-----------------------------------------------------------------------------------------------------------------");
+						System.out.println("\n");
+
+						do {
+							Collections.shuffle(alternativa2);
+							System.out.println("São tipos primitivos da linguagem Java: ");
+							System.out.println("\n");
+
+							System.out.println("a) " + alternativa2.get(0));
+							System.out.println("b) " + alternativa2.get(1));
+							System.out.println("c) " + alternativa2.get(2));
+							System.out.println("d) " + alternativa2.get(3));
+							System.out.println("e) " + alternativa2.get(4));
+
+							System.out.println("\n");
+							System.out.println("Qual a alternativa certa?: ");
+							String resposta = imput.next();
+
+							System.out.println("\n");
+							switch (resposta) {
+							case "a":
+							case "A":
+								if (alternativa2.get(0).equals("boolean, double, float e byte.")) {
+									System.out.println("Resposta Correta.");
+									System.out.println("\n");
+									acertou = true;
+									total = ponto + pontoG; //
+									ponto = total;
 									System.out.println(total + "pontos");// testando, para ver se roda certo.
 								} else {
 									System.out.println("\n");
@@ -139,7 +304,7 @@ public class the_prison {
 								break;
 							case "b":
 							case "B":
-								if (alternativa1.get(1).equals("double.")) {
+								if (alternativa2.get(1).equals("boolean, double, float e byte.")) {
 									System.out.println("Resposta Correta.");
 									System.out.println("\n");
 									acertou = true;
@@ -157,7 +322,7 @@ public class the_prison {
 								break;
 							case "c":
 							case "C":
-								if (alternativa1.get(2).equals("double.")) {
+								if (alternativa2.get(2).equals("boolean, double, float e byte.")) {
 									System.out.println("Resposta Correta.");
 									System.out.println("\n");
 									acertou = true;
@@ -175,7 +340,7 @@ public class the_prison {
 								break;
 							case "d":
 							case "D":
-								if (alternativa1.get(3).equals("double.")) {
+								if (alternativa2.get(3).equals("boolean, double, float e byte.")) {
 									System.out.println("Resposta Correta.");
 									System.out.println("\n");
 									acertou = true;
@@ -193,7 +358,7 @@ public class the_prison {
 								break;
 							case "e":
 							case "E":
-								if (alternativa1.get(4).equals("double.")) {
+								if (alternativa2.get(4).equals("boolean, double, float e byte.")) {
 									System.out.println("Resposta Correta.");
 									System.out.println("\n");
 									acertou = true;
@@ -211,7 +376,7 @@ public class the_prison {
 								break;
 							default:
 								System.out.println("\n");
-								System.out.println("Escolha Invalida.");
+								System.out.println("Escolha Inválida.");
 								System.out.println("\n");
 							}
 							contador++;
@@ -221,15 +386,9 @@ public class the_prison {
 							break;
 
 						}
-
-					}
-					System.out.println("Parabens voce passou do primeiro guarda.");
-					System.out.println("Digite 1 para continuar.");
-					navegacao = imput.nextInt();
-					if (navegacao == 1) {
-//2 questao
-						boolean acertou = false;
-						int contador = 0;
+						System.out.println("Parabéns voce passou do segundo nível.");
+						System.out.println("Digite 1 para continuar.");
+						navegacao = imput.nextInt();
 						// Proxima Questão?
 						// do {
 						// Collections.shuffle(alternativa1);
