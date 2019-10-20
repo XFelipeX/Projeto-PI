@@ -65,31 +65,28 @@ public class the_prison {
 					System.out.println("Digite 0 para voltar e 1 para começar o jogo.");
 					navegacao = imput.nextInt();
 					if (navegacao == 1) {
-
+//1 questao
 						boolean acertou = false;
 						int contador = 0;
 
 						List alternativa1 = new ArrayList();
-						alternativa1.add("boolean.");// correta
+						alternativa1.add("boolean.");
 						alternativa1.add("byte.");
 						alternativa1.add("short.");
 						alternativa1.add("long.");
-						alternativa1.add("double.");
-						
-						
-
+						alternativa1.add("double.");// correta
 
 						System.out.println("\n");
 						System.out.println(
 								"-----------------------------------------------------------------------------------------------------------------");
-						
-						System.out.println("O Guarda Bill Gates está com dificuldades na faculdade, ajude ele a solucionar esse problema!");
-						
+
+						System.out.println(
+								"O Guarda Bill Gates está com dificuldades na faculdade, ajude ele a solucionar esse problema!");
+
 						System.out.println(
 								"-----------------------------------------------------------------------------------------------------------------");
 						System.out.println("\n");
-						
-						
+
 						do {
 							Collections.shuffle(alternativa1);
 							System.out.println("Em Java, uma variável de ponto flutuante é uma variável do tipo: ");
@@ -153,8 +150,20 @@ public class the_prison {
 							}
 							contador++;
 						} while (!acertou && contador <= 2);
-						if((acertou==false)&&(contador==2))System.out.println("GAME OVER.");
-						break;
+						if (acertou == false) {
+							System.out.println("GAME OVER.");
+							break;
+
+						}
+
+					}
+					System.out.println("Parabens voce passou do primeiro guarda.");
+					System.out.println("Digite 1 para continuar.");
+					navegacao = imput.nextInt();
+					if (navegacao == 1) {
+//2 questao
+						boolean acertou = false;
+						int contador = 0;
 
 					}
 				} while (navegacao != 0);
@@ -172,7 +181,7 @@ public class the_prison {
 				System.out.println("Opção inválida.");
 
 			}
-			
+
 		} while (opcao != 4);
 
 	}
