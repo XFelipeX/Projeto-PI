@@ -11,7 +11,8 @@ public class the_prison {
 
 		Scanner imput = new Scanner(System.in);
 		int navegacao = 1;
-
+		int ponto=500, total = 0, pontoG=100, pontoP=50;// testando, depois mudar
+		
 		System.out.println("--------------------------------");
 		System.out.println("| | | | | |THE PRISON| | | | | |");
 		System.out.println("--------------------------------");
@@ -105,8 +106,14 @@ public class the_prison {
 								if (alternativa1.get(0).equals("double.")) {
 									System.out.println("Resposta Correta.");
 									acertou = true;
+									total=ponto+pontoG;
+									ponto= total;
+									System.out.println(total+"pontos");// testando, para ver se roda certo.
 								} else {
 									System.out.println("Resposta Incorreta.");
+									total=ponto-pontoP;
+									ponto= total;
+									System.out.println(total+"pontos");//testando, para ver se raoda certo.
 								}
 								break;
 							case "b":
@@ -114,8 +121,14 @@ public class the_prison {
 								if (alternativa1.get(1).equals("double.")) {
 									System.out.println("Resposta Correta.");
 									acertou = true;
+									total=ponto+pontoG;
+									ponto= total;
+									System.out.println(total+"pontos");
 								} else {
 									System.out.println("Resposta Incorreta.");
+									total=ponto-pontoP;
+									ponto= total;
+									System.out.println(total+"pontos");
 								}
 								break;
 							case "c":
@@ -123,8 +136,14 @@ public class the_prison {
 								if (alternativa1.get(2).equals("double.")) {
 									System.out.println("Resposta Correta.");
 									acertou = true;
+									total=ponto+pontoG;
+									ponto= total;
+									System.out.println(total+"pontos");
 								} else {
 									System.out.println("Resposta Incorreta.");
+									total=ponto-pontoP;
+									ponto= total;
+									System.out.println(total+"pontos");
 								}
 								break;
 							case "d":
@@ -132,8 +151,14 @@ public class the_prison {
 								if (alternativa1.get(3).equals("double.")) {
 									System.out.println("Resposta Correta.");
 									acertou = true;
+									total=ponto+pontoG;
+									ponto= total;
+									System.out.println(total+"pontos");
 								} else {
 									System.out.println("Resposta Incorreta.");
+									total=ponto-pontoP;
+									ponto= total;
+									System.out.println(total+"pontos");
 								}
 								break;
 							case "e":
@@ -141,8 +166,14 @@ public class the_prison {
 								if (alternativa1.get(4).equals("double.")) {
 									System.out.println("Resposta Correta.");
 									acertou = true;
+									total=ponto+pontoG;
+									ponto= total;
+									System.out.println(total+"pontos");
 								} else {
 									System.out.println("Resposta Incorreta.");
+									total=ponto-pontoP;
+									ponto= total;
+									System.out.println(total+"pontos");
 								}
 								break;
 							default:
