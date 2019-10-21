@@ -101,7 +101,7 @@ public class the_prison {
 								"-----------------------------------------------------------------------------------------------------------------");
 
 						System.out.println(
-								"O Guarda Bill Gates está com dificuldades na faculdade, ajude ele a solucionar esse problema!");
+								"(Guarda) Bill Gates está com dificuldades na faculdade, ajude ele a solucionar esse problema!");
 
 						System.out.println(
 								"-----------------------------------------------------------------------------------------------------------------");
@@ -119,7 +119,7 @@ public class the_prison {
 							System.out.println("e) " + alternativa1.get(4));
 
 							System.out.println("\n");
-							System.out.println("Qual a alternativa certa?: ");
+							System.out.print("Qual a alternativa certa?: ");
 							String resposta = imput.next();
 
 							System.out.println("\n");
@@ -258,7 +258,7 @@ public class the_prison {
 								"-----------------------------------------------------------------------------------------------------------------");
 
 						System.out.println(
-								"Mark Zuckerberg: Minha filha está tendo problemas para resolver um \r\n"
+								"(Guarda)Mark Zuckerberg: Minha filha está tendo problemas para resolver um \r\n"
 								+ "exercício da escola, me ajude com isto \r\n"
 								+ "e posso conseguir com que você possa acessar outra ala da prisão.\r\n"
 								+ "mas nada além disso detento!\r\n");
@@ -279,7 +279,7 @@ public class the_prison {
 							System.out.println("e) " + alternativa2.get(4));
 
 							System.out.println("\n");
-							System.out.println("Qual a alternativa certa?: ");
+							System.out.print("Qual a alternativa certa?: ");
 							String resposta = imput.next();
 
 							System.out.println("\n");
@@ -292,14 +292,16 @@ public class the_prison {
 									acertou = true;
 									total = ponto + pontoG; //
 									ponto = total;
-									System.out.println(total + "pontos");// testando, para ver se roda certo.
+									System.out.println("|"+total + " => pontos|");
+									System.out.println("\r\n");// testando, para ver se roda certo.
 								} else {
 									System.out.println("\n");
 									System.out.println("Resposta Incorreta.");
 									System.out.println("\n");
 									total = ponto - pontoP;
 									ponto = total;
-									System.out.println(total + "pontos");// testando, para ver se raoda certo.
+									System.out.println("|"+total + " => pontos|");
+									System.out.println("\r\n");// testando, para ver se raoda certo.
 								}
 								break;
 							case "b":
@@ -310,14 +312,16 @@ public class the_prison {
 									acertou = true;
 									total = ponto + pontoG;
 									ponto = total;
-									System.out.println(total + "pontos");
+									System.out.println("|"+total + " => pontos|");
+									System.out.println("\r\n");
 								} else {
 									System.out.println("\n");
 									System.out.println("Resposta Incorreta.");
 									System.out.println("\n");
 									total = ponto - pontoP;
 									ponto = total;
-									System.out.println(total + "pontos");
+									System.out.println("|"+total + " => pontos|");
+									System.out.println("\r\n");
 								}
 								break;
 							case "c":
@@ -328,14 +332,16 @@ public class the_prison {
 									acertou = true;
 									total = ponto + pontoG;
 									ponto = total;
-									System.out.println(total + "pontos");
+									System.out.println("|"+total + " => pontos|");
+									System.out.println("\r\n");
 								} else {
 									System.out.println("\n");
 									System.out.println("Resposta Incorreta.");
 									System.out.println("\n");
 									total = ponto - pontoP;
 									ponto = total;
-									System.out.println(total + "pontos");
+									System.out.println("|"+total + " => pontos|");
+									System.out.println("\r\n");
 								}
 								break;
 							case "d":
@@ -346,14 +352,16 @@ public class the_prison {
 									acertou = true;
 									total = ponto + pontoG;
 									ponto = total;
-									System.out.println(total + "pontos");
+									System.out.println("|"+total + " => pontos|");
+									System.out.println("\r\n");
 								} else {
 									System.out.println("\n");
 									System.out.println("Resposta Incorreta.");
 									System.out.println("\n");
 									total = ponto - pontoP;
 									ponto = total;
-									System.out.println(total + "pontos");
+									System.out.println("|"+total + " => pontos|");
+									System.out.println("\r\n");
 								}
 								break;
 							case "e":
@@ -363,15 +371,16 @@ public class the_prison {
 									System.out.println("\n");
 									acertou = true;
 									total = ponto + pontoG;
-									ponto = total;
-									System.out.println(total + "pontos");
+									System.out.println("|"+total + " => pontos|");
+									System.out.println("\r\n");
 								} else {
 									System.out.println("\n");
 									System.out.println("Resposta Incorreta.");
 									System.out.println("\n");
 									total = ponto - pontoP;
 									ponto = total;
-									System.out.println(total + "pontos");
+									System.out.println("|"+total + " => pontos|");
+									System.out.println("\r\n");
 								}
 								break;
 							default:
@@ -389,6 +398,164 @@ public class the_prison {
 						System.out.println("Parabéns voce passou do segundo nível.");
 						System.out.println("Digite 1 para continuar.");
 						navegacao = imput.nextInt();
+/*3 questão*/						if (navegacao==1) {
+							acertou = false;
+						    contador = 0;
+							
+							List alternativa3 = new ArrayList();
+							alternativa3.add("100");             
+							alternativa3.add("120");                 
+							alternativa3.add("50");    //resposta correta      
+							alternativa3.add("60");
+							alternativa3.add("110");
+
+							System.out.println("\n");
+							System.out.println(
+									"-----------------------------------------------------------------------------------------------------------------");
+
+							System.out.println(
+									"(Guarda)Alan Turing: Algoritmo? este nome me parece familiar... pode refrescar minha memória?");
+
+							System.out.println(
+									"-----------------------------------------------------------------------------------------------------------------");
+							System.out.println("\n");
+
+							do {
+								Collections.shuffle(alternativa3);
+								System.out.println("Um determinado algoritmo recebe dois valores e armazena\r\n"
+										+ "nas variáveis A e B, em sequência faz o seguinte processamento \r\n"
+										+ "math.pow(A, B)/2  supondo que A <- 10 e B <-2 \r\n"
+										+ "qual seria a saída de dados? \r\n");
+								System.out.println("\n");
+
+								System.out.println("a) " + alternativa3.get(0));
+								System.out.println("b) " + alternativa3.get(1));
+								System.out.println("c) " + alternativa3.get(2));
+								System.out.println("d) " + alternativa3.get(3));
+								System.out.println("e) " + alternativa3.get(4));
+
+								System.out.println("\n");
+								System.out.print("Qual a alternativa certa?: ");
+								String resposta = imput.next();
+
+								System.out.println("\n");
+								switch (resposta) {
+								case "a":
+								case "A":
+									if (alternativa3.get(0).equals("50")) {
+										System.out.println("Resposta Correta.");
+										System.out.println("\n");
+										acertou = true;
+										total = ponto + pontoG; //
+										ponto = total;
+										System.out.println("|"+total + " => pontos|");
+										System.out.println("\r\n");// testando, para ver se roda certo.
+									} else {
+										System.out.println("\n");
+										System.out.println("Resposta Incorreta.");
+										System.out.println("\n");
+										total = ponto - pontoP;
+										ponto = total;
+										System.out.println("|"+total + " => pontos|");
+										System.out.println("\r\n");// testando, para ver se raoda certo.
+									}
+									break;
+								case "b":
+								case "B":
+									if (alternativa3.get(1).equals("50")) {
+										System.out.println("Resposta Correta.");
+										System.out.println("\n");
+										acertou = true;
+										total = ponto + pontoG;
+										ponto = total;
+										System.out.println("|"+total + " => pontos|");
+										System.out.println("\r\n");
+									} else {
+										System.out.println("\n");
+										System.out.println("Resposta Incorreta.");
+										System.out.println("\n");
+										total = ponto - pontoP;
+										ponto = total;
+										System.out.println("|"+total + " => pontos|");
+										System.out.println("\r\n");
+									}
+									break;
+								case "c":
+								case "C":
+									if (alternativa3.get(2).equals("50")) {
+										System.out.println("Resposta Correta.");
+										System.out.println("\n");
+										acertou = true;
+										total = ponto + pontoG;
+										ponto = total;
+										System.out.println("|"+total + " => pontos|");
+										System.out.println("\r\n");
+									} else {
+										System.out.println("\n");
+										System.out.println("Resposta Incorreta.");
+										System.out.println("\n");
+										total = ponto - pontoP;
+										ponto = total;
+										System.out.println("|"+total + " => pontos|");
+										System.out.println("\r\n");
+									}
+									break;
+								case "d":
+								case "D":
+									if (alternativa3.get(3).equals("50")) {
+										System.out.println("Resposta Correta.");
+										System.out.println("\n");
+										acertou = true;
+										total = ponto + pontoG;
+										ponto = total;
+										System.out.println("|"+total + " => pontos|");
+										System.out.println("\r\n");
+									} else {
+										System.out.println("\n");
+										System.out.println("Resposta Incorreta.");
+										System.out.println("\n");
+										total = ponto - pontoP;
+										ponto = total;
+										System.out.println("|"+total + " => pontos|");
+										System.out.println("\r\n");
+									}
+									break;
+								case "e":
+								case "E":
+									if (alternativa3.get(4).equals("50")) {
+										System.out.println("Resposta Correta.");
+										System.out.println("\n");
+										acertou = true;
+										total = ponto + pontoG;
+										System.out.println("|"+total + " => pontos|");
+										System.out.println("\r\n");
+									} else {
+										System.out.println("\n");
+										System.out.println("Resposta Incorreta.");
+										System.out.println("\n");
+										total = ponto - pontoP;
+										ponto = total;
+										System.out.println("|"+total + " => pontos|");
+										System.out.println("\r\n");
+									}
+									break;
+								default:
+									System.out.println("\n");
+									System.out.println("Escolha Inválida.");
+									System.out.println("\n");
+								}
+								contador++;
+							} while (!acertou && contador <= 2);
+							if (acertou == false) {
+								System.out.println("GAME OVER.");
+								break;
+
+							}
+							System.out.println("Parabéns voce passou do terceiro nível.");
+							System.out.println("Digite 1 para continuar.");
+							navegacao = imput.nextInt();
+							
+						}
 						// Proxima Questão?
 						// do {
 						// Collections.shuffle(alternativa1);
