@@ -11,11 +11,9 @@ public class the_prison {
 		/*pontoG == pontos ganhos
 		  pontoP == pontor perdidos
 		  testando, depois mudar*/
-		Scanner imput = new Scanner(System.in);				   					  
-		int navegacao = 1;                                      
-		int ponto = 500, total = 0, pontoG = 100, pontoP = 50;  
-		int opcao;
-
+		Scanner imput = new Scanner(System.in);				   					                                       
+		int ponto = 500, total = 0, pontoG = 100, pontoP = 50,opcao,navegacao=1;  
+		String usuario = "";
 		do {
 
 			System.out.println(
@@ -87,6 +85,8 @@ public class the_prison {
 					navegacao = imput.nextInt();
 					if (navegacao == 1) {
 //1 questao
+						System.out.println("Informe seu nome detento:");
+						usuario = imput.next();
 						boolean acertou = false;
 						int contador = 0;
 
@@ -133,6 +133,7 @@ public class the_prison {
 									acertou = true;
 									total = ponto + pontoG;
 									ponto = total;
+									System.out.println("ID => "+usuario);
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");				// testando, para ver se roda certo.
 								} else {
@@ -141,6 +142,7 @@ public class the_prison {
 									System.out.println("\n");
 									total = ponto - pontoP;
 									ponto = total;
+									System.out.println("ID => "+usuario);
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");				// testando, para ver se raoda certo.
 								}
@@ -153,6 +155,7 @@ public class the_prison {
 									acertou = true;
 									total = ponto + pontoG;
 									ponto = total;
+									System.out.println("ID => "+usuario);
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");
 								} else {
@@ -161,6 +164,7 @@ public class the_prison {
 									System.out.println("\n");
 									total = ponto - pontoP;
 									ponto = total;
+									System.out.println("ID => "+usuario);
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");
 								}
@@ -173,6 +177,7 @@ public class the_prison {
 									acertou = true;
 									total = ponto + pontoG;
 									ponto = total;
+									System.out.println("ID => "+usuario);
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");
 								} else {
@@ -181,6 +186,7 @@ public class the_prison {
 									System.out.println("\n");
 									total = ponto - pontoP;
 									ponto = total;
+									System.out.println("ID => "+usuario);
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");
 								}
@@ -193,6 +199,7 @@ public class the_prison {
 									acertou = true;
 									total = ponto + pontoG;
 									ponto = total;
+									System.out.println("ID => "+usuario);
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");
 								} else {
@@ -201,6 +208,7 @@ public class the_prison {
 									System.out.println("\n");
 									total = ponto - pontoP;
 									ponto = total;
+									System.out.println("ID => "+usuario);
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");
 								}
@@ -213,6 +221,7 @@ public class the_prison {
 									acertou = true;
 									total = ponto + pontoG;
 									ponto = total;
+									System.out.println("ID => "+usuario);
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");
 								} else {
@@ -221,6 +230,7 @@ public class the_prison {
 									System.out.println("\n");
 									total = ponto - pontoP;
 									ponto = total;
+									System.out.println("ID => "+usuario);
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");
 								}
@@ -293,6 +303,7 @@ public class the_prison {
 									acertou = true;
 									total = ponto + pontoG; //
 									ponto = total;
+									System.out.println("ID => "+usuario);
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");// testando, para ver se roda certo.
 								} else {
@@ -301,6 +312,7 @@ public class the_prison {
 									System.out.println("\n");
 									total = ponto - pontoP;
 									ponto = total;
+									System.out.println("ID => "+usuario);
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");// testando, para ver se raoda certo.
 								}
@@ -313,6 +325,7 @@ public class the_prison {
 									acertou = true;
 									total = ponto + pontoG;
 									ponto = total;
+									System.out.println("ID => "+usuario);
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");
 								} else {
@@ -321,6 +334,7 @@ public class the_prison {
 									System.out.println("\n");
 									total = ponto - pontoP;
 									ponto = total;
+									System.out.println("ID => "+usuario);
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");
 								}
@@ -333,6 +347,7 @@ public class the_prison {
 									acertou = true;
 									total = ponto + pontoG;
 									ponto = total;
+									System.out.println("ID => "+usuario);
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");
 								} else {
@@ -341,6 +356,7 @@ public class the_prison {
 									System.out.println("\n");
 									total = ponto - pontoP;
 									ponto = total;
+									System.out.println("ID => "+usuario);
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");
 								}
@@ -353,6 +369,7 @@ public class the_prison {
 									acertou = true;
 									total = ponto + pontoG;
 									ponto = total;
+									System.out.println("ID => "+usuario);
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");
 								} else {
@@ -361,6 +378,7 @@ public class the_prison {
 									System.out.println("\n");
 									total = ponto - pontoP;
 									ponto = total;
+									System.out.println("ID => "+usuario);
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");
 								}
@@ -373,6 +391,7 @@ public class the_prison {
 									acertou = true;
 									total = ponto + pontoG;
 									ponto = total;
+									System.out.println("ID => "+usuario);
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");
 								} else {
@@ -381,6 +400,7 @@ public class the_prison {
 									System.out.println("\n");
 									total = ponto - pontoP;
 									ponto = total;
+									System.out.println("ID => "+usuario);
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");
 								}
@@ -450,6 +470,7 @@ public class the_prison {
 										acertou = true;
 										total = ponto + pontoG; //
 										ponto = total;
+										System.out.println("ID => "+usuario);
 										System.out.println("|"+total + " => pontos|");
 										System.out.println("\r\n");// testando, para ver se roda certo.
 									} else {
@@ -458,6 +479,7 @@ public class the_prison {
 										System.out.println("\n");
 										total = ponto - pontoP;
 										ponto = total;
+										System.out.println("ID => "+usuario);
 										System.out.println("|"+total + " => pontos|");
 										System.out.println("\r\n");// testando, para ver se raoda certo.
 									}
@@ -470,6 +492,7 @@ public class the_prison {
 										acertou = true;
 										total = ponto + pontoG;
 										ponto = total;
+										System.out.println("ID => "+usuario);
 										System.out.println("|"+total + " => pontos|");
 										System.out.println("\r\n");
 									} else {
@@ -478,6 +501,7 @@ public class the_prison {
 										System.out.println("\n");
 										total = ponto - pontoP;
 										ponto = total;
+										System.out.println("ID => "+usuario);
 										System.out.println("|"+total + " => pontos|");
 										System.out.println("\r\n");
 									}
@@ -490,6 +514,7 @@ public class the_prison {
 										acertou = true;
 										total = ponto + pontoG;
 										ponto = total;
+										System.out.println("ID => "+usuario);
 										System.out.println("|"+total + " => pontos|");
 										System.out.println("\r\n");
 									} else {
@@ -498,6 +523,7 @@ public class the_prison {
 										System.out.println("\n");
 										total = ponto - pontoP;
 										ponto = total;
+										System.out.println("ID => "+usuario);
 										System.out.println("|"+total + " => pontos|");
 										System.out.println("\r\n");
 									}
@@ -510,6 +536,7 @@ public class the_prison {
 										acertou = true;
 										total = ponto + pontoG;
 										ponto = total;
+										System.out.println("ID => "+usuario);
 										System.out.println("|"+total + " => pontos|");
 										System.out.println("\r\n");
 									} else {
@@ -518,6 +545,7 @@ public class the_prison {
 										System.out.println("\n");
 										total = ponto - pontoP;
 										ponto = total;
+										System.out.println("ID => "+usuario);
 										System.out.println("|"+total + " => pontos|");
 										System.out.println("\r\n");
 									}
@@ -529,6 +557,7 @@ public class the_prison {
 										System.out.println("\n");
 										acertou = true;
 										total = ponto + pontoG;
+										System.out.println("ID => "+usuario);
 										System.out.println("|"+total + " => pontos|");
 										System.out.println("\r\n");
 									} else {
@@ -537,6 +566,7 @@ public class the_prison {
 										System.out.println("\n");
 										total = ponto - pontoP;
 										ponto = total;
+										System.out.println("ID => "+usuario);
 										System.out.println("|"+total + " => pontos|");
 										System.out.println("\r\n");
 									}
@@ -578,13 +608,13 @@ public class the_prison {
 
 			case 3:
 				do {
-				System.out.println("___________________");
+				System.out.println("-------------------");
 				System.out.println("|Desenvolvido por:|");
 				System.out.println("|Felipe Dias      |");
 				System.out.println("|Ji               |");
 				System.out.println("|Marcus           |");
 				System.out.println("|Pedro            |");
-				System.out.println("|_________________|");
+				System.out.println("-------------------");
 				System.out.println("\r\n");
 				System.out.println("Digite 0 para voltar para o menu.");
 				navegacao = imput.nextInt();
