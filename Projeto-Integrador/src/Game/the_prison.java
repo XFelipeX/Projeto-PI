@@ -14,18 +14,19 @@ public class the_prison {
 		Scanner imput = new Scanner(System.in);				   					  
 		int navegacao = 1;                                      
 		int ponto = 500, total = 0, pontoG = 100, pontoP = 50;  
-		 														
-
-		System.out.println(
-				"----------------------------------------------------------------------------------------------------------------");
-		System.out.println(
-				"| | | | | | | | | | | | | | | | | | | | | | | | |THE PRISON| | | | | | | | | | | | | | | | | | | | | | | | | | |");
-		System.out.println(
-				"----------------------------------------------------------------------------------------------------------------");
-		System.out.println("\n");
 		int opcao;
 
 		do {
+
+			System.out.println(
+					"----------------------------------------------------------------------------------------------------------------");
+			System.out.println(
+					"| | | | | | | | | | | | | | | | | | | | | | | | |THE PRISON| | | | | | | | | | | | | | | | | | | | | | | | | | |");
+			System.out.println(
+					"| | | | | | | | | | | | | | | | | | | | | | | | | | | | |  | | | | | | | | | | | | | | | | | | | | | | | | | | |");
+			System.out.println(
+					"----------------------------------------------------------------------------------------------------------------");
+			System.out.println("\n");
 
 			System.out.println("----------------------------");
 			System.out.println("|1 - Instruções do Jogo:   |");
@@ -371,6 +372,7 @@ public class the_prison {
 									System.out.println("\n");
 									acertou = true;
 									total = ponto + pontoG;
+									ponto = total;
 									System.out.println("|"+total + " => pontos|");
 									System.out.println("\r\n");
 								} else {
@@ -575,11 +577,23 @@ public class the_prison {
 				break;
 
 			case 3:
-				System.out.println("Colocar os créditos do jogo");
+				do {
+				System.out.println("___________________");
+				System.out.println("|Desenvolvido por:|");
+				System.out.println("|Felipe Dias      |");
+				System.out.println("|Ji               |");
+				System.out.println("|Marcus           |");
+				System.out.println("|Pedro            |");
+				System.out.println("|_________________|");
+				System.out.println("\r\n");
+				System.out.println("Digite 0 para voltar para o menu.");
+				navegacao = imput.nextInt();
+				}while(navegacao!=0);
+				
 				break;
 
 			case 4:
-				System.out.println("você está saindo do jogo.");
+				System.out.println("você está saindo do jogo...");
 				break;
 
 			default:
