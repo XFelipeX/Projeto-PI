@@ -596,16 +596,16 @@ public class the_prison {
 
 							List alternativa4 = new ArrayList();
 							alternativa4.add("10");
-							alternativa4.add("15");
+							alternativa4.add("15"); // resposta correta
 							alternativa4.add("20");
-							alternativa4.add("25"); // resposta correta
+							alternativa4.add("25"); 
 							alternativa4.add("30");
 
 							System.out.println("\n");
 							System.out.println(
 									"-----------------------------------------------------------------------------------------------------------------");
 
-							System.out.println("******");
+							System.out.println("O guarda Steve Jobs ...");
 
 							System.out.println(
 									"-----------------------------------------------------------------------------------------------------------------");
@@ -637,7 +637,7 @@ public class the_prison {
 								switch (resposta) {
 								case "a":
 								case "A":
-									if (alternativa4.get(0).equals("25")) {
+									if (alternativa4.get(0).equals("15")) {
 										System.out.println("Resposta Correta.");
 										System.out.println("\n");
 										acertou = true;
@@ -661,7 +661,7 @@ public class the_prison {
 									break;
 								case "b":
 								case "B":
-									if (alternativa4.get(1).equals("25")) {
+									if (alternativa4.get(1).equals("15")) {
 										System.out.println("Resposta Correta.");
 										System.out.println("\n");
 										acertou = true;
@@ -685,7 +685,7 @@ public class the_prison {
 									break;
 								case "c":
 								case "C":
-									if (alternativa4.get(2).equals("25")) {
+									if (alternativa4.get(2).equals("15")) {
 										System.out.println("Resposta Correta.");
 										System.out.println("\n");
 										acertou = true;
@@ -709,7 +709,7 @@ public class the_prison {
 									break;
 								case "d":
 								case "D":
-									if (alternativa4.get(3).equals("25")) {
+									if (alternativa4.get(3).equals("15")) {
 										System.out.println("Resposta Correta.");
 										System.out.println("\n");
 										acertou = true;
@@ -733,7 +733,7 @@ public class the_prison {
 									break;
 								case "e":
 								case "E":
-									if (alternativa4.get(4).equals("25")) {
+									if (alternativa4.get(4).equals("15")) {
 										System.out.println("Resposta Correta.");
 										System.out.println("\n");
 										acertou = true;
