@@ -773,6 +773,172 @@ public class the_prison {
 								System.out.println("GAME OVER.");
 								break;
 							}
+		//Questão 05		
+							if (navegacao==1) {
+								acertou = false;
+							    contador = 0;
+								
+								List alternativa5 = new ArrayList();
+								alternativa5.add(" Linguagem de programação.");             
+								alternativa5.add(" Estrutura sequencial");                 
+								alternativa5.add("Sequência de passos lógicos.");    //resposta correta      
+								alternativa5.add(" IDE muito utilizada por programadores experientes.");
+								alternativa5.add("Matemática aplicada a TI.");
+
+								System.out.println("\n");
+								System.out.println(
+										"-----------------------------------------------------------------------------------------------------------------");
+
+								System.out.println(
+										"");
+
+								System.out.println(
+										"-----------------------------------------------------------------------------------------------------------------");
+								System.out.println("\n");
+
+								do {
+									Collections.shuffle(alternativa5);
+									System.out.println(" \r\n");
+									System.out.println("\n");
+
+									System.out.println("a) " + alternativa5.get(0));
+									System.out.println("b) " + alternativa5.get(1));
+									System.out.println("c) " + alternativa5.get(2));
+									System.out.println("d) " + alternativa5.get(3));
+									System.out.println("e) " + alternativa5.get(4));
+
+									System.out.println("O que é um algoritmo? \n");
+									
+									String resposta = imput.next();
+
+									System.out.println("\n");
+									switch (resposta) {
+									case "a":
+									case "A":
+										if (alternativa5.get(0).equals("Sequência de passos lógicos.")) {
+											System.out.println("Resposta Correta! ");
+											System.out.println("\n");
+											acertou = true;
+											total = ponto + pontoG; //
+											ponto = total;
+											System.out.println("ID => "+usuario);
+											System.out.println("|"+total + " => pontos|");
+											System.out.println("\r\n");// testando, para ver se roda certo.
+										} else {
+											System.out.println("\n");
+											System.out.println("Resposta Incorreta.");
+											System.out.println("\n");
+											total = ponto - pontoP;
+											ponto = total;
+											System.out.println("ID => "+usuario);
+											System.out.println("|"+total + " => pontos|");
+											System.out.println("\r\n");// testando, para ver se raoda certo.
+										}
+										break;
+									case "b":
+									case "B":
+										if (alternativa5.get(1).equals("Sequência de passos lógicos.")) {
+											System.out.println("Resposta Correta!");
+											System.out.println("\n");
+											acertou = true;
+											total = ponto + pontoG;
+											ponto = total;
+											System.out.println("ID => "+usuario);
+											System.out.println("|"+total + " => pontos|");
+											System.out.println("\r\n");
+										} else {
+											System.out.println("\n");
+											System.out.println("Resposta Incorreta.");
+											System.out.println("\n");
+											total = ponto - pontoP;
+											ponto = total;
+											System.out.println("ID => "+usuario);
+											System.out.println("|"+total + " => pontos|");
+											System.out.println("\r\n");
+										}
+										break;
+									case "c":
+									case "C":
+										if (alternativa5.get(2).equals("Sequência de passos lógicos.")) {
+											System.out.println("Resposta Correta!");
+											System.out.println("\n");
+											acertou = true;
+											total = ponto + pontoG;
+											ponto = total;
+											System.out.println("ID => "+usuario);
+											System.out.println("|"+total + " => pontos|");
+											System.out.println("\r\n");
+										} else {
+											System.out.println("\n");
+											System.out.println("Resposta Incorreta.");
+											System.out.println("\n");
+											total = ponto - pontoP;
+											ponto = total;
+											System.out.println("ID => "+usuario);
+											System.out.println("|"+total + " => pontos|");
+											System.out.println("\r\n");
+										}
+										break;
+									case "d":
+									case "D":
+										if (alternativa5.get(3).equals("Sequência de passos lógicos.")) {
+											System.out.println("Resposta Correta!");
+											System.out.println("\n");
+											acertou = true;
+											total = ponto + pontoG;
+											ponto = total;
+											System.out.println("ID => "+usuario);
+											System.out.println("|"+total + " => pontos|");
+											System.out.println("\r\n");
+										} else {
+											System.out.println("\n");
+											System.out.println("Resposta Incorreta.");
+											System.out.println("\n");
+											total = ponto - pontoP;
+											ponto = total;
+											System.out.println("ID => "+usuario);
+											System.out.println("|"+total + " => pontos|");
+											System.out.println("\r\n");
+										}
+										break;
+									case "e":
+									case "E":
+										if (alternativa5.get(4).equals("Sequência de passos lógicos.")) {
+											System.out.println("Resposta Correta!");
+											System.out.println("\n");
+											acertou = true;
+											total = ponto + pontoG;
+											System.out.println("ID => "+usuario);
+											System.out.println("|"+total + " => pontos|");
+											System.out.println("\r\n");
+										} else {
+											System.out.println("\n");
+											System.out.println("Resposta Incorreta.");
+											System.out.println("\n");
+											total = ponto - pontoP;
+											ponto = total;
+											System.out.println("ID => "+usuario);
+											System.out.println("|"+total + " => pontos|");
+											System.out.println("\r\n");
+										}
+										break;
+									default:
+										System.out.println("\n");
+										System.out.println("Escolha Inválida.");
+										System.out.println("\n");
+									}
+									contador++;
+								} while (!acertou && contador <= 2);
+								if (acertou == false) {
+									System.out.println("GAME OVER.");
+									break;
+
+								}
+								System.out.println("Parabéns voce ...!!");//planejando 
+								System.out.println("Digite 1 para continuar.");
+								navegacao = imput.nextInt();
+								
+							}
 						}
 
 						// Proxima Questão exemplo.
