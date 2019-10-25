@@ -6,6 +6,27 @@ import java.util.List;
 import java.util.Scanner;
 
 public class the_prison {
+	static void menu() {
+
+		System.out.println(
+				"----------------------------------------------------------------------------------------------------------------");
+		System.out.println(
+				"| | | | | | | | | | | | | | | | | | | | | | | | |THE PRISON| | | | | | | | | | | | | | | | | | | | | | | | | | |");
+		System.out.println(
+				"| | | | | | | | | | | | | | | | | | | | | | | | | | | | |  | | | | | | | | | | | | | | | | | | | | | | | | | | |");
+		System.out.println(
+				"----------------------------------------------------------------------------------------------------------------");
+		System.out.println("\n");
+
+		System.out.println("----------------------------");
+		System.out.println("|1 - Instruções do Jogo:   |");
+		System.out.println("|2 - Começar o jogo:       |");
+		System.out.println("|3 - Créditos do jogo:     |");
+		System.out.println("|4 - Sair:                 |");
+		System.out.println("|Escolha uma opção:        |");
+		System.out.println("----------------------------");
+		System.out.println("\n");
+	}
 
 	public static void main(String[] args) {
 		/* CÓDIGO PRINCIPAL!
@@ -15,25 +36,7 @@ public class the_prison {
 		int ponto = 500, total = 0, pontoG = 100, pontoP = 50, opcao, navegacao = 1;
 		String usuario = "";
 		do {
-
-			System.out.println(
-					"----------------------------------------------------------------------------------------------------------------");
-			System.out.println(
-					"| | | | | | | | | | | | | | | | | | | | | | | | |THE PRISON| | | | | | | | | | | | | | | | | | | | | | | | | | |");
-			System.out.println(
-					"| | | | | | | | | | | | | | | | | | | | | | | | | | | | |  | | | | | | | | | | | | | | | | | | | | | | | | | | |");
-			System.out.println(
-					"----------------------------------------------------------------------------------------------------------------");
-			System.out.println("\n");
-
-			System.out.println("----------------------------");
-			System.out.println("|1 - Instruções do Jogo:   |");
-			System.out.println("|2 - Começar o jogo:       |");
-			System.out.println("|3 - Créditos do jogo:     |");
-			System.out.println("|4 - Sair:                 |");
-			System.out.println("|Escolha uma opção:        |");
-			System.out.println("----------------------------");
-			System.out.println("\n");
+			menu();
 			opcao = imput.nextInt();
 
 			switch (opcao) {
@@ -247,11 +250,14 @@ public class the_prison {
 							break;
 
 						}
+						else {
+							System.out.println("Parabéns voce passou do primeiro nível.");
+							System.out.println("Digite 1 para continuar.");
+							navegacao = imput.nextInt();
+						}
 
 					}
-					System.out.println("Parabéns voce passou do primeiro nível.");
-					System.out.println("Digite 1 para continuar.");
-					navegacao = imput.nextInt();
+					
 					if (navegacao == 1) {
 //2 questao
 						boolean acertou = false;
