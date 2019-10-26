@@ -817,7 +817,7 @@ public class the_prison {
 											ponto = total;
 											System.out.println("ID => "+usuario);
 											System.out.println("|"+total + " => pontos|");
-											System.out.println("\r\n");// testando, para ver se roda certo.
+											System.out.println("\r\n");
 										} else {
 											System.out.println("\n");
 											System.out.println("Resposta Incorreta.");
@@ -826,7 +826,7 @@ public class the_prison {
 											ponto = total;
 											System.out.println("ID => "+usuario);
 											System.out.println("|"+total + " => pontos|");
-											System.out.println("\r\n");// testando, para ver se raoda certo.
+											System.out.println("\r\n");
 										}
 										break;
 									case "b":
@@ -928,8 +928,8 @@ public class the_prison {
 									break;
 
 								}
-								System.out.println("Parabéns voce ...!!");//planejando 
-								System.out.println("Digite 1 para continuar.");
+								System.out.println("Parabéns você escapou da prisão!!");
+								System.out.println("Digite 0 para continuar.");
 								navegacao = imput.nextInt();
 								
 							}
