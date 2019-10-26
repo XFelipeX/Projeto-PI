@@ -33,6 +33,7 @@ public class the_prison {
 		 * pontoG == pontos ganhos pontoP == pontor perdidos testando, depois mudar
 		 */
 		Scanner imput = new Scanner(System.in);
+		Scanner imput1 = new Scanner(System.in);// tava dando erro no espaço no nome.
 		int ponto = 500, total = 0, pontoG = 100, pontoP = 50, opcao, navegacao = 1;
 		String usuario = "";
 		do {
@@ -89,7 +90,8 @@ public class the_prison {
 					if (navegacao == 1) {
 //1 questao
 						System.out.println("Informe seu nome detento:");
-						usuario = imput.next();
+						usuario = imput1.nextLine();
+						
 						boolean acertou = false;
 						int contador = 0;
 
