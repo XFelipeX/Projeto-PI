@@ -3,30 +3,41 @@ package Game;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 public class the_prison {
 	static void menu() {
 
 		System.out.println(
-				"-------------------------------------------------------------------------------------------------");
+				"----------------------------------------------------------------------------------------------------------------");
 		System.out.println(
-				"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | ");
+				"| | | | | | | | | | | | | | | | | | | | | | | | |THE PRISON| | | | | | | | | | | | | | | | | | | | | | | | | | |");
 		System.out.println(
-				"| | | | | | | | | | | | | | | | | | | | | |THE  PRISON| | | | | | | | | | | | | | | | | | | | | | ");
+				"| | | | | | | | | | | | | | | | | | | | | | | | | | | | |  | | | | | | | | | | | | | | | | | | | | | | | | | | |");
 		System.out.println(
-				"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | ");
-
-		System.out.println("| | | | | | | | | | | | | | | | |   1 - Instruções do Jogo:   | | | | | | | | | | | | | | | | | | ");
-		System.out.println("| | | | | | | | | | | | | | | | |   2 - Começar o jogo:       | | | | | | | | | | | | | | | | | | ");
-		System.out.println("| | | | | | | | | | | | | | | | |   3 - Créditos do jogo:     | | | | | | | | | | | | | | | | | | ");
-		System.out.println("| | | | | | | | | | | | | | | | |   4 - Sair:                 | | | | | | | | | | | | | | | | | | ");
-		System.out.println("| | | | | | | | | | | | | | | | |   Escolha uma opção:        | | | | | | | | | | | | | | | | | | ");
-		System.out.println("| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | ");
-		System.out.println(
-				"-------------------------------------------------------------------------------------------------");
+				"----------------------------------------------------------------------------------------------------------------");
 		System.out.println("\n");
-		
+
+		System.out.println("----------------------------");
+		System.out.println("|1 - Instruções do Jogo:   |");
+		System.out.println("|2 - Começar o jogo:       |");
+		System.out.println("|3 - Créditos do jogo:     |");
+		System.out.println("|4 - Sair:                 |");
+		System.out.println("|Escolha uma opção:        |");
+		System.out.println("----------------------------");
+		System.out.println("\n");
+	}
+	static void embaralhar(String V[]) {
+		Random random = new Random();
+	
+		for (int i=0;i<V.length;i++) {
+			int indice2 = random.nextInt(V.length);
+			String posicao = V[i];
+			V[i]=V[indice2];
+			V[indice2]=posicao;
+		}
+
 	}
 
 	public static void main(String[] args) {
@@ -34,11 +45,28 @@ public class the_prison {
 		 * pontoG == pontos ganhos pontoP == pontor perdidos testando, depois mudar
 		 */
 		Scanner imput = new Scanner(System.in);
-		Scanner imput1 = new Scanner(System.in);// tava dando erro no espaço no nome.
 		int ponto = 500, total = 0, pontoG = 100, pontoP = 50, opcao, navegacao = 1;
 		String usuario = "";
 		do {
-			menu();
+
+			System.out.println(
+					"----------------------------------------------------------------------------------------------------------------");
+			System.out.println(
+					"| | | | | | | | | | | | | | | | | | | | | | | | |THE PRISON| | | | | | | | | | | | | | | | | | | | | | | | | | |");
+			System.out.println(
+					"| | | | | | | | | | | | | | | | | | | | | | | | | | | | |  | | | | | | | | | | | | | | | | | | | | | | | | | | |");
+			System.out.println(
+					"----------------------------------------------------------------------------------------------------------------");
+			System.out.println("\n");
+
+			System.out.println("----------------------------");
+			System.out.println("|1 - Instruções do Jogo:   |");
+			System.out.println("|2 - Começar o jogo:       |");
+			System.out.println("|3 - Créditos do jogo:     |");
+			System.out.println("|4 - Sair:                 |");
+			System.out.println("|Escolha uma opção:        |");
+			System.out.println("----------------------------");
+			System.out.println("\n");
 			opcao = imput.nextInt();
 
 			switch (opcao) {
@@ -91,17 +119,16 @@ public class the_prison {
 					if (navegacao == 1) {
 //1 questao
 						System.out.println("Informe seu nome detento:");
-						usuario = imput1.nextLine();
-						
+						usuario = imput.next();
 						boolean acertou = false;
 						int contador = 0;
-
-						List alternativa1 = new ArrayList();
-						alternativa1.add("boolean.");
-						alternativa1.add("byte.");
-						alternativa1.add("short.");
-						alternativa1.add("long.");
-						alternativa1.add("double.");// correta
+						String alternativa1[]=new String[5]; 
+						alternativa1[0]="boolean.";
+						alternativa1[1]="byte.";
+						alternativa1[2]="short.";
+						alternativa1[3]="long.";
+						alternativa1[4]="double.";// correta
+						
 
 						System.out.println("\n");
 						System.out.println(
@@ -115,15 +142,14 @@ public class the_prison {
 						System.out.println("\n");
 
 						do {
-							Collections.shuffle(alternativa1);
 							System.out.println("Em Java, uma variável de ponto flutuante é uma variável do tipo: ");
 							System.out.println("\n");
-
-							System.out.println("a) " + alternativa1.get(0));
-							System.out.println("b) " + alternativa1.get(1));
-							System.out.println("c) " + alternativa1.get(2));
-							System.out.println("d) " + alternativa1.get(3));
-							System.out.println("e) " + alternativa1.get(4));
+							embaralhar(alternativa1);
+							System.out.println("a) " + alternativa1[0]);
+							System.out.println("b) " + alternativa1[1]);
+							System.out.println("c) " + alternativa1[2]);
+							System.out.println("d) " + alternativa1[3]);
+							System.out.println("e) " + alternativa1[4]);
 
 							System.out.println("\n");
 							System.out.print("Qual a alternativa certa?: ");
@@ -133,7 +159,7 @@ public class the_prison {
 							switch (resposta) {
 							case "a":
 							case "A":
-								if (alternativa1.get(0).equals("double.")) {
+								if (alternativa1[0]==("double.")) {
 									System.out.println("Resposta Correta.");
 									System.out.println("\n");
 									acertou = true;
@@ -155,7 +181,7 @@ public class the_prison {
 								break;
 							case "b":
 							case "B":
-								if (alternativa1.get(1).equals("double.")) {
+								if (alternativa1[1].equals("double.")) {
 									System.out.println("Resposta Correta.");
 									System.out.println("\n");
 									acertou = true;
@@ -177,7 +203,7 @@ public class the_prison {
 								break;
 							case "c":
 							case "C":
-								if (alternativa1.get(2).equals("double.")) {
+								if (alternativa1[2].equals("double.")) {
 									System.out.println("Resposta Correta.");
 									System.out.println("\n");
 									acertou = true;
@@ -199,7 +225,7 @@ public class the_prison {
 								break;
 							case "d":
 							case "D":
-								if (alternativa1.get(3).equals("double.")) {
+								if (alternativa1[3].equals("double.")) {
 									System.out.println("Resposta Correta.");
 									System.out.println("\n");
 									acertou = true;
@@ -221,7 +247,7 @@ public class the_prison {
 								break;
 							case "e":
 							case "E":
-								if (alternativa1.get(4).equals("double.")) {
+								if (alternativa1[4].equals("double.")) {
 									System.out.println("Resposta Correta.");
 									System.out.println("\n");
 									acertou = true;
@@ -253,14 +279,11 @@ public class the_prison {
 							break;
 
 						}
-						else {
-							System.out.println("Parabéns voce passou do primeiro nível.");
-							System.out.println("Digite 1 para continuar.");
-							navegacao = imput.nextInt();
-						}
 
 					}
-					
+					System.out.println("Parabéns voce passou do primeiro nível.");
+					System.out.println("Digite 1 para continuar.");
+					navegacao = imput.nextInt();
 					if (navegacao == 1) {
 //2 questao
 						boolean acertou = false;
@@ -783,17 +806,17 @@ public class the_prison {
 								
 								List alternativa5 = new ArrayList();
 								alternativa5.add(" Linguagem de programação.");             
-								alternativa5.add(" Estrutura sequencial");                 
+								alternativa5.add(" Estrutura sequencial.");                 
 								alternativa5.add("Sequência de passos lógicos.");    //resposta correta      
 								alternativa5.add(" IDE muito utilizada por programadores experientes.");
 								alternativa5.add("Matemática aplicada a TI.");
 
+								
 								System.out.println("\n");
 								System.out.println(
 										"-----------------------------------------------------------------------------------------------------------------");
 
-								System.out.println(
-										"");
+								System.out.println("O diretor Gavin Belson... ");
 
 								System.out.println(
 										"-----------------------------------------------------------------------------------------------------------------");
@@ -801,7 +824,7 @@ public class the_prison {
 
 								do {
 									Collections.shuffle(alternativa5);
-									System.out.println(" \r\n");
+									System.out.println(" O que é um algoritmo?");
 									System.out.println("\n");
 
 									System.out.println("a) " + alternativa5.get(0));
@@ -810,7 +833,7 @@ public class the_prison {
 									System.out.println("d) " + alternativa5.get(3));
 									System.out.println("e) " + alternativa5.get(4));
 
-									System.out.println("O que é um algoritmo? \n");
+									System.out.println("\n");
 									
 									String resposta = imput.next();
 
@@ -826,7 +849,7 @@ public class the_prison {
 											ponto = total;
 											System.out.println("ID => "+usuario);
 											System.out.println("|"+total + " => pontos|");
-											System.out.println("\r\n");// testando, para ver se roda certo.
+											System.out.println("\r\n");
 										} else {
 											System.out.println("\n");
 											System.out.println("Resposta Incorreta.");
@@ -835,7 +858,7 @@ public class the_prison {
 											ponto = total;
 											System.out.println("ID => "+usuario);
 											System.out.println("|"+total + " => pontos|");
-											System.out.println("\r\n");// testando, para ver se raoda certo.
+											System.out.println("\r\n");
 										}
 										break;
 									case "b":
@@ -937,8 +960,8 @@ public class the_prison {
 									break;
 
 								}
-								System.out.println("Parabéns voce ...!!");//planejando 
-								System.out.println("Digite 1 para continuar.");
+								System.out.println("Parabéns você escapou da prisão!!");
+								System.out.println("Digite 0 para continuar.");
 								navegacao = imput.nextInt();
 								
 							}
