@@ -28,14 +28,14 @@ public class the_prison {
 		System.out.println("----------------------------");
 		System.out.println("\n");
 	}
-	static void embaralhar(String V[]) {
+	static void embaralhar(String Vetor[]) {  //funcao que embaralha as alternativas contidas no vetor 
 		Random random = new Random();
 	
-		for (int i=0;i<V.length;i++) {
-			int indice2 = random.nextInt(V.length);
-			String posicao = V[i];
-			V[i]=V[indice2];
-			V[indice2]=posicao;
+		for (int i=0;i<Vetor.length;i++) {
+			int indice2 = random.nextInt(Vetor.length);
+			String posicao = Vetor[i];
+			Vetor[i]=Vetor[indice2];
+			Vetor[indice2]=posicao;
 		}
 
 	}
@@ -48,25 +48,7 @@ public class the_prison {
 		int ponto = 500, total = 0, pontoG = 100, pontoP = 50, opcao, navegacao = 1;
 		String usuario = "";
 		do {
-
-			System.out.println(
-					"----------------------------------------------------------------------------------------------------------------");
-			System.out.println(
-					"| | | | | | | | | | | | | | | | | | | | | | | | |THE PRISON| | | | | | | | | | | | | | | | | | | | | | | | | | |");
-			System.out.println(
-					"| | | | | | | | | | | | | | | | | | | | | | | | | | | | |  | | | | | | | | | | | | | | | | | | | | | | | | | | |");
-			System.out.println(
-					"----------------------------------------------------------------------------------------------------------------");
-			System.out.println("\n");
-
-			System.out.println("----------------------------");
-			System.out.println("|1 - Instruções do Jogo:   |");
-			System.out.println("|2 - Começar o jogo:       |");
-			System.out.println("|3 - Créditos do jogo:     |");
-			System.out.println("|4 - Sair:                 |");
-			System.out.println("|Escolha uma opção:        |");
-			System.out.println("----------------------------");
-			System.out.println("\n");
+			menu();
 			opcao = imput.nextInt();
 
 			switch (opcao) {
