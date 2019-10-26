@@ -48,7 +48,25 @@ public class the_prison {
 		int ponto = 500, total = 0, pontoG = 100, pontoP = 50, opcao, navegacao = 1;
 		String usuario = "";
 		do {
-			menu();
+
+			System.out.println(
+					"----------------------------------------------------------------------------------------------------------------");
+			System.out.println(
+					"| | | | | | | | | | | | | | | | | | | | | | | | |THE PRISON| | | | | | | | | | | | | | | | | | | | | | | | | | |");
+			System.out.println(
+					"| | | | | | | | | | | | | | | | | | | | | | | | | | | | |  | | | | | | | | | | | | | | | | | | | | | | | | | | |");
+			System.out.println(
+					"----------------------------------------------------------------------------------------------------------------");
+			System.out.println("\n");
+
+			System.out.println("----------------------------");
+			System.out.println("|1 - Instruções do Jogo:   |");
+			System.out.println("|2 - Começar o jogo:       |");
+			System.out.println("|3 - Créditos do jogo:     |");
+			System.out.println("|4 - Sair:                 |");
+			System.out.println("|Escolha uma opção:        |");
+			System.out.println("----------------------------");
+			System.out.println("\n");
 			opcao = imput.nextInt();
 
 			switch (opcao) {
@@ -261,14 +279,11 @@ public class the_prison {
 							break;
 
 						}
-						else {
-							System.out.println("Parabéns voce passou do primeiro nível.");
-							System.out.println("Digite 1 para continuar.");
-							navegacao = imput.nextInt();
-						}
 
 					}
-					
+					System.out.println("Parabéns voce passou do primeiro nível.");
+					System.out.println("Digite 1 para continuar.");
+					navegacao = imput.nextInt();
 					if (navegacao == 1) {
 //2 questao
 						boolean acertou = false;
@@ -791,17 +806,17 @@ public class the_prison {
 								
 								List alternativa5 = new ArrayList();
 								alternativa5.add(" Linguagem de programação.");             
-								alternativa5.add(" Estrutura sequencial");                 
+								alternativa5.add(" Estrutura sequencial.");                 
 								alternativa5.add("Sequência de passos lógicos.");    //resposta correta      
 								alternativa5.add(" IDE muito utilizada por programadores experientes.");
 								alternativa5.add("Matemática aplicada a TI.");
 
+								
 								System.out.println("\n");
 								System.out.println(
 										"-----------------------------------------------------------------------------------------------------------------");
 
-								System.out.println(
-										"");
+								System.out.println("O diretor Gavin Belson... ");
 
 								System.out.println(
 										"-----------------------------------------------------------------------------------------------------------------");
@@ -809,7 +824,7 @@ public class the_prison {
 
 								do {
 									Collections.shuffle(alternativa5);
-									System.out.println(" \r\n");
+									System.out.println(" O que é um algoritmo?");
 									System.out.println("\n");
 
 									System.out.println("a) " + alternativa5.get(0));
@@ -818,7 +833,7 @@ public class the_prison {
 									System.out.println("d) " + alternativa5.get(3));
 									System.out.println("e) " + alternativa5.get(4));
 
-									System.out.println("O que é um algoritmo? \n");
+									System.out.println("\n");
 									
 									String resposta = imput.next();
 
@@ -834,7 +849,7 @@ public class the_prison {
 											ponto = total;
 											System.out.println("ID => "+usuario);
 											System.out.println("|"+total + " => pontos|");
-											System.out.println("\r\n");// testando, para ver se roda certo.
+											System.out.println("\r\n");
 										} else {
 											System.out.println("\n");
 											System.out.println("Resposta Incorreta.");
@@ -843,7 +858,7 @@ public class the_prison {
 											ponto = total;
 											System.out.println("ID => "+usuario);
 											System.out.println("|"+total + " => pontos|");
-											System.out.println("\r\n");// testando, para ver se raoda certo.
+											System.out.println("\r\n");
 										}
 										break;
 									case "b":
@@ -945,8 +960,8 @@ public class the_prison {
 									break;
 
 								}
-								System.out.println("Parabéns voce ...!!");//planejando 
-								System.out.println("Digite 1 para continuar.");
+								System.out.println("Parabéns você escapou da prisão!!");
+								System.out.println("Digite 0 para continuar.");
 								navegacao = imput.nextInt();
 								
 							}
