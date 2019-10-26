@@ -3,6 +3,7 @@ package Game;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 public class the_prison {
@@ -26,6 +27,17 @@ public class the_prison {
 		System.out.println("|Escolha uma opção:        |");
 		System.out.println("----------------------------");
 		System.out.println("\n");
+	}
+	static void embaralhar(String V[]) {
+		Random random = new Random();
+	
+		for (int i=0;i<V.length;i++) {
+			int indice2 = random.nextInt(V.length);
+			String posicao = V[i];
+			V[i]=V[indice2];
+			V[indice2]=posicao;
+		}
+
 	}
 
 	public static void main(String[] args) {
@@ -92,13 +104,13 @@ public class the_prison {
 						usuario = imput.next();
 						boolean acertou = false;
 						int contador = 0;
-
-						List alternativa1 = new ArrayList();
-						alternativa1.add("boolean.");
-						alternativa1.add("byte.");
-						alternativa1.add("short.");
-						alternativa1.add("long.");
-						alternativa1.add("double.");// correta
+						String alternativa1[]=new String[5]; 
+						alternativa1[0]="boolean.";
+						alternativa1[1]="byte.";
+						alternativa1[2]="short.";
+						alternativa1[3]="long.";
+						alternativa1[4]="double.";// correta
+						
 
 						System.out.println("\n");
 						System.out.println(
@@ -112,15 +124,14 @@ public class the_prison {
 						System.out.println("\n");
 
 						do {
-							Collections.shuffle(alternativa1);
 							System.out.println("Em Java, uma variável de ponto flutuante é uma variável do tipo: ");
 							System.out.println("\n");
-
-							System.out.println("a) " + alternativa1.get(0));
-							System.out.println("b) " + alternativa1.get(1));
-							System.out.println("c) " + alternativa1.get(2));
-							System.out.println("d) " + alternativa1.get(3));
-							System.out.println("e) " + alternativa1.get(4));
+							embaralhar(alternativa1);
+							System.out.println("a) " + alternativa1[0]);
+							System.out.println("b) " + alternativa1[1]);
+							System.out.println("c) " + alternativa1[2]);
+							System.out.println("d) " + alternativa1[3]);
+							System.out.println("e) " + alternativa1[4]);
 
 							System.out.println("\n");
 							System.out.print("Qual a alternativa certa?: ");
@@ -130,7 +141,7 @@ public class the_prison {
 							switch (resposta) {
 							case "a":
 							case "A":
-								if (alternativa1.get(0).equals("double.")) {
+								if (alternativa1[0]==("double.")) {
 									System.out.println("Resposta Correta.");
 									System.out.println("\n");
 									acertou = true;
@@ -152,7 +163,7 @@ public class the_prison {
 								break;
 							case "b":
 							case "B":
-								if (alternativa1.get(1).equals("double.")) {
+								if (alternativa1[1].equals("double.")) {
 									System.out.println("Resposta Correta.");
 									System.out.println("\n");
 									acertou = true;
@@ -174,7 +185,7 @@ public class the_prison {
 								break;
 							case "c":
 							case "C":
-								if (alternativa1.get(2).equals("double.")) {
+								if (alternativa1[2].equals("double.")) {
 									System.out.println("Resposta Correta.");
 									System.out.println("\n");
 									acertou = true;
@@ -196,7 +207,7 @@ public class the_prison {
 								break;
 							case "d":
 							case "D":
-								if (alternativa1.get(3).equals("double.")) {
+								if (alternativa1[3].equals("double.")) {
 									System.out.println("Resposta Correta.");
 									System.out.println("\n");
 									acertou = true;
@@ -218,7 +229,7 @@ public class the_prison {
 								break;
 							case "e":
 							case "E":
-								if (alternativa1.get(4).equals("double.")) {
+								if (alternativa1[4].equals("double.")) {
 									System.out.println("Resposta Correta.");
 									System.out.println("\n");
 									acertou = true;
