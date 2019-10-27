@@ -142,8 +142,11 @@ public class the_prison {
 					if (navegacao == 1) {
 					dificuldade();
 					opcao = imput.nextInt();
+					if (opcao == 1) { //dificuldade: fácil
+						
+					}
 					
-					if (opcao == 2) {
+					if (opcao == 2) { //dificuldade: normal
 						
 //1 questao
 						System.out.println("Informe seu nome detento:");
@@ -312,15 +315,15 @@ public class the_prison {
 							break;
 
 						}
-
-					}
 					System.out.println("Parabéns voce passou do primeiro nível.");
 					System.out.println("Digite 1 para continuar.");
 					navegacao = imput.nextInt();
+
+
 					if (navegacao == 1) {
 //2 questao
-						boolean acertou = false;
-						int contador = 0;
+						acertou = false;
+					    contador = 0;
 						String alternativa2[] = new String[5];
 						alternativa2[0] = "int, string, long e real.";
 						alternativa2[1] = "char, int, real e bit.";
@@ -1036,6 +1039,13 @@ public class the_prison {
 						// contador++;
 						// }while (!acertou));
 
+					}
+					}
+					if(opcao==3) { //dificuldade: difícil
+						
+					}
+					else {
+						System.out.println("Opção inválida!");
 					}
 				} while (navegacao != 0);
 				break;
