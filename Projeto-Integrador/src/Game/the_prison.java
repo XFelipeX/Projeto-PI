@@ -1,12 +1,16 @@
 package Game;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
 public class the_prison {
+	static void dificuldade() {
+		System.out.println("-------------------------------------------------------------------------------------------------------");
+		System.out.println("| | | | | | | | | | | | | | | | | | | | 1 - Fácil   | | | | | | | | | | | | | | | | | | | | | | | | | |");
+		System.out.println("| | | | | | | | | | | | | | | | | | | | 2 - Normal  | | | | | | | | | | | | | | | | | | | | | | | | | |");
+		System.out.println("| | | | | | | | | | | | | | | | | | | | 3 - Difícil | | | | | | | | | | | | | | | | | | | | | | | | | |");
+		System.out.println("-------------------------------------------------------------------------------------------------------");
+		System.out.println("Escolha uma opção:");
+	}
 	static void menu() {
 
 		System.out.println(
@@ -132,9 +136,15 @@ public class the_prison {
 							"-------------------------------------------------------------------------------------------------------");
 					System.out.println("\n");
 					System.out.println("Digite 0 para voltar e 1 para começar o jogo.");
+					
 
 					navegacao = imput.nextInt();
 					if (navegacao == 1) {
+					dificuldade();
+					opcao = imput.nextInt();
+					
+					if (opcao == 2) {
+						
 //1 questao
 						System.out.println("Informe seu nome detento:");
 						usuario = imput2.next();
@@ -1005,11 +1015,12 @@ public class the_prison {
 
 								}
 								System.out.println("Parabéns você escapou da prisão!!");
-								System.out.println("Digite 0 para continuar.");
+								System.out.println("Digite 0 para voltar ao menu principal.");
 								navegacao = imput.nextInt();
 
 							}
 						}
+					}
 
 						// Proxima Questão exemplo.
 						// do {
