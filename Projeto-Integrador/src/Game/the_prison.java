@@ -58,7 +58,7 @@ public class the_prison {
 		 */
 		Scanner imput = new Scanner(System.in);
 		Scanner imput2 = new Scanner(System.in);
-		int ponto = 500, total = 0, pontoG = 100, pontoP = 50, opcao, navegacao = 1;
+		int ponto = 100, total = 0, pontoG = 100, pontoP = 50, opcao, navegacao = 1;
 		String usuario = "";
 		do {
 			menu();
@@ -73,6 +73,8 @@ public class the_prison {
 					System.out.println(
 							"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
 					System.out.println(
+							"| | | | |             - O jogador começa com 100 pontos iniciais.                             | | | | |");
+					System.out.println(			   
 							"| | | | |                                                                                     | | | | |");
 					System.out.println(
 							"| | | | |             - Cada questão vale 100 pontos de respeito.                             | | | | |");
@@ -90,6 +92,8 @@ public class the_prison {
 							"| | | | |             - Caso acerte uma pergunta você ganha 100 pontos.                       | | | | |");
 					System.out.println(
 							"| | | | |                                                                                     | | | | |");
+					System.out.println(			   
+							"| | | | |             - O jogador tem 3 tentativas para acertar todas as perguntas.           | | | | |");
 					System.out.println(
 							"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
 					System.out.println(
@@ -143,7 +147,175 @@ public class the_prison {
 					dificuldade();
 					opcao = imput.nextInt();
 					if (opcao == 1) { //dificuldade: fácil
+						System.out.println("Informe seu nome detento:");
+						usuario = imput2.next();
+						boolean acertou = false;
+						int contador = 0;
+						String alternativa1[] = new String[5];
+						alternativa1[0] = "do/while.";
+						alternativa1[1] = "while.";
+						alternativa1[2] = "for.";
+						alternativa1[3] = "repeat.";
+						alternativa1[4] = "for/while.";// correta
+
+						System.out.println("\n");
+						System.out.println(
+								"-------------------------------------------------------------------------------------------------------");
+						System.out.println(
+								"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
+						System.out.println(
+								"| | |                                                                                             | | |");
+						System.out.println(
+								"| | | (Guarda) Bill Gates: Está com dificuldades na faculdade, ajude ele a solucionar             | | |\r\n"
+								+"| | |                      esse problema!                                                         | | |");
+						System.out.println(
+								"| | |                                                                                             | | |");
+						System.out.println(
+								"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
+						System.out.println(
+								"-------------------------------------------------------------------------------------------------------");
+						System.out.println("\n");
 						
+						do {
+							System.out.println("Existe um laço de repetição que sempre é executado pelo menos uma vez: ");
+							System.out.println("\n");
+							embaralhar(alternativa1);
+							System.out.println("a) " + alternativa1[0]);
+							System.out.println("b) " + alternativa1[1]);
+							System.out.println("c) " + alternativa1[2]);
+							System.out.println("d) " + alternativa1[3]);
+							System.out.println("e) " + alternativa1[4]);
+							System.out.println("\n");
+							System.out.print("Qual a alternativa certa?: ");
+							String resposta = imput.next();
+
+							System.out.println("\n");
+							switch (resposta) {
+							case "a":
+							case "A":
+								if (alternativa1[0] == ("do/while.")) {
+									System.out.println("Resposta Correta.");
+									System.out.println("\n");
+									acertou = true;
+									total = ponto + pontoG;
+									ponto = total;
+									System.out.println("ID => " + usuario);
+									System.out.println("|" + total + " => pontos|");
+									System.out.println("\r\n"); // testando, para ver se roda certo.
+								} else {
+									System.out.println("\n");
+									System.out.println("Resposta Incorreta.");
+									System.out.println("\n");
+									total = ponto - pontoP;
+									ponto = total;
+									System.out.println("ID => " + usuario);
+									System.out.println("|" + total + " => pontos|");
+									System.out.println("\r\n"); // testando, para ver se raoda certo.
+								}
+								break;
+							case "b":
+							case "B":
+								if (alternativa1[1].equals("do/while.")) {
+									System.out.println("Resposta Correta.");
+									System.out.println("\n");
+									acertou = true;
+									total = ponto + pontoG;
+									ponto = total;
+									System.out.println("ID => " + usuario);
+									System.out.println("|" + total + " => pontos|");
+									System.out.println("\r\n");
+								} else {
+									System.out.println("\n");
+									System.out.println("Resposta Incorreta.");
+									System.out.println("\n");
+									total = ponto - pontoP;
+									ponto = total;
+									System.out.println("ID => " + usuario);
+									System.out.println("|" + total + " => pontos|");
+									System.out.println("\r\n");
+								}
+								break;
+							case "c":
+							case "C":
+								if (alternativa1[2].equals("do/while.")) {
+									System.out.println("Resposta Correta.");
+									System.out.println("\n");
+									acertou = true;
+									total = ponto + pontoG;
+									ponto = total;
+									System.out.println("ID => " + usuario);
+									System.out.println("|" + total + " => pontos|");
+									System.out.println("\r\n");
+								} else {
+									System.out.println("\n");
+									System.out.println("Resposta Incorreta.");
+									System.out.println("\n");
+									total = ponto - pontoP;
+									ponto = total;
+									System.out.println("ID => " + usuario);
+									System.out.println("|" + total + " => pontos|");
+									System.out.println("\r\n");
+								}
+								break;
+							case "d":
+							case "D":
+								if (alternativa1[3].equals("do/while.")) {
+									System.out.println("Resposta Correta.");
+									System.out.println("\n");
+									acertou = true;
+									total = ponto + pontoG;
+									ponto = total;
+									System.out.println("ID => " + usuario);
+									System.out.println("|" + total + " => pontos|");
+									System.out.println("\r\n");
+								} else {
+									System.out.println("\n");
+									System.out.println("Resposta Incorreta.");
+									System.out.println("\n");
+									total = ponto - pontoP;
+									ponto = total;
+									System.out.println("ID => " + usuario);
+									System.out.println("|" + total + " => pontos|");
+									System.out.println("\r\n");
+								}
+								break;
+							case "e":
+							case "E":
+								if (alternativa1[4].equals("do/while.")) {
+									System.out.println("Resposta Correta.");
+									System.out.println("\n");
+									acertou = true;
+									total = ponto + pontoG;
+									ponto = total;
+									System.out.println("ID => " + usuario);
+									System.out.println("|" + total + " => pontos|");
+									System.out.println("\r\n");
+								} else {
+									System.out.println("\n");
+									System.out.println("Resposta Incorreta.");
+									System.out.println("\n");
+									total = ponto - pontoP;
+									ponto = total;
+									System.out.println("ID => " + usuario);
+									System.out.println("|" + total + " => pontos|");
+									System.out.println("\r\n");
+								}
+								break;
+							default:
+								System.out.println("\n");
+								System.out.println("Escolha Invalida.");
+								System.out.println("\n");
+							}
+							contador++;
+						} while (!acertou && contador <= 2);
+						if (acertou == false) {
+							System.out.println("GAME OVER.");
+							break;
+
+						}
+					System.out.println("Parabéns voce passou do primeiro nível.");
+					System.out.println("Digite 1 para continuar.");
+					navegacao = imput.nextInt();
 					}
 					
 					if (opcao == 2) { //dificuldade: normal
