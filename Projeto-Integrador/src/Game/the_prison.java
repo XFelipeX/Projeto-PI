@@ -148,7 +148,7 @@ public class the_prison {
 					opcao = imput.nextInt();
 					if (opcao == 1) { //dificuldade: fácil
 						System.out.println("Informe seu nome detento:");
-						usuario = imput2.next();
+						usuario = imput2.nextLine();
 						boolean acertou = false;
 						int contador = 0;
 						String alternativa1[] = new String[5];
@@ -315,9 +315,354 @@ public class the_prison {
 						}
 					System.out.println("Parabéns voce passou do primeiro nível.");
 					System.out.println("Digite 1 para continuar.");
-					navegacao = imput.nextInt();
+					navegacao = imput.nextInt();					
+					if (navegacao == 1) {
+//2 questao facil						
+						acertou = false;
+					    contador = 0;
+						String alternativa2[] = new String[5];
+						alternativa2[0] = "enquanto e system.out.print";
+						alternativa2[1] = "escreva e write";
+						alternativa2[2] = "enquanto e while";
+						alternativa2[3] = "escreva e system.out.print"; //correto
+						alternativa2[4] = "leia e scanner (system.in)";
+						
+						System.out.println("\n");
+						System.out.println(
+								"-------------------------------------------------------------------------------------------------------");
+						System.out.println(
+								"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
+						System.out.println(
+								"| | |                                                                                             | | |");
+						System.out.println(
+								"| | | (Guarda)Mark Zuckerberg: Minha filha está tendo problemas para resolver um                  | | |\r\n"
+										+ "| | |                          exercício da escola, me ajude com isto e posso                     | | |\r\n"
+										+ "| | |                          conseguir com que você possa acessar outra ala da prisão,          | | |\r\n"
+										+ "| | |                          mas nada além disso detento!                                       | | |");
+						System.out.println(
+								"| | |                                                                                             | | |");
+						System.out.println(
+								"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
+						System.out.println(
+								"-------------------------------------------------------------------------------------------------------");
+						System.out.println("\n");
+						do {
+							System.out.println("Em relação as funções de saída nos algoritmos e JAVA respectivamente,\n"
+									+ " marque a alternativa CORRETA: ");
+							System.out.println("\n");
+							embaralhar(alternativa2);
+							System.out.println("a) " + alternativa2[0]);
+							System.out.println("b) " + alternativa2[1]);
+							System.out.println("c) " + alternativa2[2]);
+							System.out.println("d) " + alternativa2[3]);
+							System.out.println("e) " + alternativa2[4]);
+
+							System.out.println("\n");
+							System.out.print("Qual a alternativa certa?: ");
+							String resposta = imput.next();
+
+							System.out.println("\n");
+							switch (resposta) {
+							case "a":
+							case "A":
+								if (alternativa2[0]==("escreva e system.out.print")) {
+									System.out.println("Resposta Correta.");
+									System.out.println("\n");
+									acertou = true;
+									total = ponto + pontoG; //
+									ponto = total;
+									System.out.println("ID => " + usuario);
+									System.out.println("|" + total + " => pontos|");
+									System.out.println("\r\n");// testando, para ver se roda certo.
+								} else {
+									System.out.println("\n");
+									System.out.println("Resposta Incorreta.");
+									System.out.println("\n");
+									total = ponto - pontoP;
+									ponto = total;
+									System.out.println("ID => " + usuario);
+									System.out.println("|" + total + " => pontos|");
+									System.out.println("\r\n");// testando, para ver se raoda certo.
+								}
+								break;
+							case "b":
+							case "B":
+								if (alternativa2[1]==("escreva e system.out.print")) {
+									System.out.println("Resposta Correta.");
+									System.out.println("\n");
+									acertou = true;
+									total = ponto + pontoG;
+									ponto = total;
+									System.out.println("ID => " + usuario);
+									System.out.println("|" + total + " => pontos|");
+									System.out.println("\r\n");
+								} else {
+									System.out.println("\n");
+									System.out.println("Resposta Incorreta.");
+									System.out.println("\n");
+									total = ponto - pontoP;
+									ponto = total;
+									System.out.println("ID => " + usuario);
+									System.out.println("|" + total + " => pontos|");
+									System.out.println("\r\n");
+								}
+								break;
+							case "c":
+							case "C":
+								if (alternativa2[2]==("escreva e system.out.print")) {
+									System.out.println("Resposta Correta.");
+									System.out.println("\n");
+									acertou = true;
+									total = ponto + pontoG;
+									ponto = total;
+									System.out.println("ID => " + usuario);
+									System.out.println("|" + total + " => pontos|");
+									System.out.println("\r\n");
+								} else {
+									System.out.println("\n");
+									System.out.println("Resposta Incorreta.");
+									System.out.println("\n");
+									total = ponto - pontoP;
+									ponto = total;
+									System.out.println("ID => " + usuario);
+									System.out.println("|" + total + " => pontos|");
+									System.out.println("\r\n");
+								}
+								break;
+							case "d":
+							case "D":
+								if (alternativa2[3]==("escreva e system.out.print")) {
+									System.out.println("Resposta Correta.");
+									System.out.println("\n");
+									acertou = true;
+									total = ponto + pontoG;
+									ponto = total;
+									System.out.println("ID => " + usuario);
+									System.out.println("|" + total + " => pontos|");
+									System.out.println("\r\n");
+								} else {
+									System.out.println("\n");
+									System.out.println("Resposta Incorreta.");
+									System.out.println("\n");
+									total = ponto - pontoP;
+									ponto = total;
+									System.out.println("ID => " + usuario);
+									System.out.println("|" + total + " => pontos|");
+									System.out.println("\r\n");
+								}
+								break;
+							case "e":
+							case "E":
+								if (alternativa2[4]==("escreva e system.out.print")) {
+									System.out.println("Resposta Correta.");
+									System.out.println("\n");
+									acertou = true;
+									total = ponto + pontoG;
+									ponto = total;
+									System.out.println("ID => " + usuario);
+									System.out.println("|" + total + " => pontos|");
+									System.out.println("\r\n");
+								} else {
+									System.out.println("\n");
+									System.out.println("Resposta Incorreta.");
+									System.out.println("\n");
+									total = ponto - pontoP;
+									ponto = total;
+									System.out.println("ID => " + usuario);
+									System.out.println("|" + total + " => pontos|");
+									System.out.println("\r\n");
+								}
+								break;
+							default:
+								System.out.println("\n");
+								System.out.println("Escolha Inválida.");
+								System.out.println("\n");
+							}
+							contador++;
+						} while (!acertou && contador <= 2);
+						if (acertou == false) {
+							System.out.println("GAME OVER.");
+							break;
+
+						}
+						System.out.println("Parabéns voce passou do segundo nível.");
+						System.out.println("Digite 1 para continuar.");
+						navegacao = imput.nextInt();
+//3 questao modo facil 						
+						if (navegacao == 1) {
+							acertou = false;
+							contador = 0;
+
+							String alternativa3[] = new String[5];
+							alternativa3[0] = "import, package e class.";
+							alternativa3[1] = "class, package e import.";
+							alternativa3[2] = "class, import e package."; 
+							alternativa3[3] = "package, class e import.";
+							alternativa3[4] = "package, import e class.";// resposta correta
+
+							System.out.println("\n");
+							System.out.println(
+									"-------------------------------------------------------------------------------------------------------");
+							System.out.println(
+									"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
+							System.out.println(
+									"| | |                                                                                             | | |");
+							System.out.println(
+									"| | | (Guarda)Alan Turing: Algoritmo? este nome me parece familiar...                             | | |\r\n"
+									+"| | |                      pode refrescar minha memória?                                          | | |");
+							System.out.println(
+									"| | |                                                                                             | | |");
+							System.out.println(
+									"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
+							System.out.println(
+									"-------------------------------------------------------------------------------------------------------");
+							System.out.println("\n");
+
+							do {
+								embaralhar(alternativa3);
+								System.out.println("Os três elementos básicos quando contidos num arquivo fonte Java\n"
+										+ " devem obrigatoriamente se apresentar na seguinte ordem:");
+								System.out.println("\n");
+
+								System.out.println("a) " + alternativa3[0]);
+								System.out.println("b) " + alternativa3[1]);
+								System.out.println("c) " + alternativa3[2]);
+								System.out.println("d) " + alternativa3[3]);
+								System.out.println("e) " + alternativa3[4]);
+
+								System.out.println("\n");
+								System.out.print("Qual a alternativa certa?: ");
+								String resposta = imput.next();
+
+								System.out.println("\n");
+								switch (resposta) {
+								case "a":
+								case "A":
+									if (alternativa3[0] == ("package, import e class.")) {
+										System.out.println("Resposta Correta.");
+										System.out.println("\n");
+										acertou = true;
+										total = ponto + pontoG; //
+										ponto = total;
+										System.out.println("ID => " + usuario);
+										System.out.println("|" + total + " => pontos|");
+										System.out.println("\r\n");// testando, para ver se roda certo.
+									} else {
+										System.out.println("\n");
+										System.out.println("Resposta Incorreta.");
+										System.out.println("\n");
+										total = ponto - pontoP;
+										ponto = total;
+										System.out.println("ID => " + usuario);
+										System.out.println("|" + total + " => pontos|");
+										System.out.println("\r\n");// testando, para ver se roda certo.
+									}
+									break;
+								case "b":
+								case "B":
+									if (alternativa3[1] == ("package, import e class.")) {
+										System.out.println("Resposta Correta.");
+										System.out.println("\n");
+										acertou = true;
+										total = ponto + pontoG;
+										ponto = total;
+										System.out.println("ID => " + usuario);
+										System.out.println("|" + total + " => pontos|");
+										System.out.println("\r\n");
+									} else {
+										System.out.println("\n");
+										System.out.println("Resposta Incorreta.");
+										System.out.println("\n");
+										total = ponto - pontoP;
+										ponto = total;
+										System.out.println("ID => " + usuario);
+										System.out.println("|" + total + " => pontos|");
+										System.out.println("\r\n");
+									}
+									break;
+								case "c":
+								case "C":
+									if (alternativa3[2] == ("package, import e class.")) {
+										System.out.println("Resposta Correta.");
+										System.out.println("\n");
+										acertou = true;
+										total = ponto + pontoG;
+										ponto = total;
+										System.out.println("ID => " + usuario);
+										System.out.println("|" + total + " => pontos|");
+										System.out.println("\r\n");
+									} else {
+										System.out.println("\n");
+										System.out.println("Resposta Incorreta.");
+										System.out.println("\n");
+										total = ponto - pontoP;
+										ponto = total;
+										System.out.println("ID => " + usuario);
+										System.out.println("|" + total + " => pontos|");
+										System.out.println("\r\n");
+									}
+									break;
+								case "d":
+								case "D":
+									if (alternativa3[3] == ("package, import e class.")) {
+										System.out.println("Resposta Correta.");
+										System.out.println("\n");
+										acertou = true;
+										total = ponto + pontoG;
+										ponto = total;
+										System.out.println("ID => " + usuario);
+										System.out.println("|" + total + " => pontos|");
+										System.out.println("\r\n");
+									} else {
+										System.out.println("\n");
+										System.out.println("Resposta Incorreta.");
+										System.out.println("\n");
+										total = ponto - pontoP;
+										ponto = total;
+										System.out.println("ID => " + usuario);
+										System.out.println("|" + total + " => pontos|");
+										System.out.println("\r\n");
+									}
+									break;
+								case "e":
+								case "E":
+									if (alternativa3[4] == ("package, import e class.")) {
+										System.out.println("Resposta Correta.");
+										System.out.println("\n");
+										acertou = true;
+										total = ponto + pontoG;
+										System.out.println("ID => " + usuario);
+										System.out.println("|" + total + " => pontos|");
+										System.out.println("\r\n");
+									} else {
+										System.out.println("\n");
+										System.out.println("Resposta Incorreta.");
+										System.out.println("\n");
+										total = ponto - pontoP;
+										ponto = total;
+										System.out.println("ID => " + usuario);
+										System.out.println("|" + total + " => pontos|");
+										System.out.println("\r\n");
+									}
+									break;
+								default:
+									System.out.println("\n");
+									System.out.println("Escolha Inválida.");
+									System.out.println("\n");
+								}
+								contador++;
+							} while (!acertou && contador <= 2);
+							if (acertou == false) {
+								System.out.println("GAME OVER.");
+								break;
+
+							}
+						}
+						System.out.println("Parabéns você passou do terceiro nível.");
+						System.out.println("Digite 1 para continuar.");
+						navegacao = imput.nextInt();
+					}						
 					}
-					
 					if (opcao == 2) { //dificuldade: normal
 						
 //1 questao
