@@ -1497,11 +1497,11 @@ public class the_prison {
 							boolean acertou = false;
 							int contador = 0;
 							String alternativa1[] = new String[5];
-							alternativa1[0] = " ";
-							alternativa1[1] = " ";
-							alternativa1[2] = " ";
-							alternativa1[3] = " ";
-							alternativa1[4] = " ";// RESPOSTA CORRETA
+							alternativa1[0] = " “ [ e ] ” ";
+							alternativa1[1] = " “ { ” e “ } ” "; // RESPOSTA CORRETA
+							alternativa1[2] = " “ [ ” e “ ] ” ";
+							alternativa1[3] = " “Início” e “Fim” ";
+							alternativa1[4] = " “ ( ” e “ ) ” ";
 
 							System.out.println("\n");
 							System.out.println(
@@ -1524,7 +1524,7 @@ public class the_prison {
 							do {
 								embaralhar(alternativa1);
 								// ALTERNATIVA NO SYSTEM ABAIXO
-								System.out.println(" *** ");
+								System.out.println("Em relação aos delimitadores de blocos em JAVA, marque a alternativa VERDADEIRA: ");
 								System.out.println("\n");
 								System.out
 										.println("Assinale a alternativa correta, em relação á saída do código acima.");
@@ -1543,7 +1543,7 @@ public class the_prison {
 								switch (resposta) {
 								case "a":
 								case "A":
-									if (alternativa1[0] == (" ")) {
+									if (alternativa1[0] == ("{ ” e “ }")) {
 										System.out.println("Resposta Correta.");
 										System.out.println("\n");
 										acertou = true;
@@ -1565,7 +1565,7 @@ public class the_prison {
 									break;
 								case "b":
 								case "B":
-									if (alternativa1[1] == (" ")) {
+									if (alternativa1[1] == ("{ ” e “ }")) {
 										System.out.println("Resposta Correta.");
 										System.out.println("\n");
 										acertou = true;
@@ -1587,7 +1587,7 @@ public class the_prison {
 									break;
 								case "c":
 								case "C":
-									if (alternativa1[2] == (" ")) {
+									if (alternativa1[2] == ("{ ” e “ }")) {
 										System.out.println("Resposta Correta.");
 										System.out.println("\n");
 										acertou = true;
@@ -1609,7 +1609,7 @@ public class the_prison {
 									break;
 								case "d":
 								case "D":
-									if (alternativa1[3] == (" ")) {
+									if (alternativa1[3] == ("{ ” e “ }")) {
 										System.out.println("Resposta Correta.");
 										System.out.println("\n");
 										acertou = true;
@@ -1631,7 +1631,7 @@ public class the_prison {
 									break;
 								case "e":
 								case "E":
-									if (alternativa1[4] == (" ")) {
+									if (alternativa1[4] == ("{ ” e “ }")) {
 										System.out.println("Resposta Correta.");
 										System.out.println("\n");
 										acertou = true;
@@ -1663,6 +1663,13 @@ public class the_prison {
 								System.out.println("GAME OVER.");
 								break;
 							}
+							
+							//feedback
+							//Um bloco é definido por ({}) e contém um grupo de outros blocos. Quando um novo
+							//bloco é criado um novo escopo local é aberto e permite a definição de variáveis locais. As
+							//variáveis definidas dentro de um bloco só podem ser vistas internamente a este, e são
+							//terminadas ou extintas no final da execução deste(}).
+							 
 
 							System.out.println("Parabéns você passou do primeiro nível.");
 							System.out.println("Digite 1 para continuar.");
@@ -1676,11 +1683,11 @@ public class the_prison {
 								contador = 0;
 
 								String alternativa2[] = new String[5];
-								alternativa2[0] = " ";
-								alternativa2[1] = " "; // RESPOSTA CORRETA
-								alternativa2[2] = " ";
-								alternativa2[3] = " ";
-								alternativa2[4] = " ";
+								alternativa2[0] = "18";
+								alternativa2[1] = "21"; // RESPOSTA CORRETA
+								alternativa2[2] = "19";
+								alternativa2[3] = "20";
+								alternativa2[4] = "22";
 
 								System.out.println("\n");
 								System.out.println(
@@ -1705,7 +1712,24 @@ public class the_prison {
 								do {
 									embaralhar(alternativa2);
 									// ALTERNATIVA NO SYSTEM ABAIXO
-									System.out.println(" *** ");
+									System.out.println(" Com relação a funções e procedimentos na linguagem JAVA, analise o programa abaixo desenvolvido no ambiente Netbeans 7.3:\r\n" + 
+											"\r\n" + 
+											"public class Fibonacci {\r\n" + 
+											"        static long f (int n) {\r\n" + 
+											"              if (n < 2) {\r\n" + 
+											"                   return n;\r\n" + 
+											"              }else {\r\n" + 
+											"                  return f(n - 1) + f {n - 2);\r\n" + 
+											"              }\r\n" + 
+											"        }\r\n" + 
+											"        public static void main(String[ ] args) {\r\n" + 
+											"        int i ;\r\n" + 
+											"        for  ( i = 0; i < 8; i++) { }\r\n" + 
+											"              System.out.println (f (i)) ;\r\n" + 
+											"        }\r\n" + 
+											"}\r\n" + 
+											"\r\n" + 
+											"Assinale a opção que apresenta o valor que será impresso pelo programa acima. ");
 									System.out.println("\n");
 									System.out.println(
 											"Assinale a alternativa correta, em relação á saída do código acima.");
@@ -1724,7 +1748,7 @@ public class the_prison {
 									switch (resposta) {
 									case "a":
 									case "A":
-										if (alternativa2[0] == (" ")) {
+										if (alternativa2[0] == ("21")) {
 											System.out.println("Resposta Correta.");
 											System.out.println("\n");
 											acertou = true;
@@ -1746,7 +1770,7 @@ public class the_prison {
 										break;
 									case "b":
 									case "B":
-										if (alternativa2[1] == (" ")) {
+										if (alternativa2[1] == ("21")) {
 											System.out.println("Resposta Correta.");
 											System.out.println("\n");
 											acertou = true;
@@ -1768,7 +1792,7 @@ public class the_prison {
 										break;
 									case "c":
 									case "C":
-										if (alternativa2[2] == (" ")) {
+										if (alternativa2[2] == ("21")) {
 											System.out.println("Resposta Correta.");
 											System.out.println("\n");
 											acertou = true;
@@ -1790,7 +1814,7 @@ public class the_prison {
 										break;
 									case "d":
 									case "D":
-										if (alternativa2[3] == (" ")) {
+										if (alternativa2[3] == ("21")) {
 											System.out.println("Resposta Correta.");
 											System.out.println("\n");
 											acertou = true;
@@ -1812,7 +1836,7 @@ public class the_prison {
 										break;
 									case "e":
 									case "E":
-										if (alternativa2[4] == (" ")) {
+										if (alternativa2[4] == ("21")) {
 											System.out.println("Resposta Correta.");
 											System.out.println("\n");
 											acertou = true;
@@ -1857,11 +1881,11 @@ public class the_prison {
 								contador = 0;
 
 								String alternativa3[] = new String[5];
-								alternativa3[0] = " ";
-								alternativa3[1] = " "; // RESPOSTA CORRETA
-								alternativa3[2] = " ";
-								alternativa3[3] = " ";
-								alternativa3[4] = " ";
+								alternativa3[0] = "if; for; while.";
+								alternativa3[1] = "if; if ... else; switch."; // RESPOSTA CORRETA
+								alternativa3[2] = "while; switch; else.";
+								alternativa3[3] = "if; while; do while.";
+								alternativa3[4] = "if...else; for; printf;";
 
 								System.out.println("\n");
 								System.out.println(
@@ -1882,7 +1906,8 @@ public class the_prison {
 								do {
 									embaralhar(alternativa3);
 									// ALTERNATIVA NO SYSTEM ABAIXO
-									System.out.println(" *** ");
+									System.out.println(" Acerca da programação orientada a objetos, usando Java, analise a seguinte assertiva:"
+											+ " “O Java contém três tipos de instruções de seleção\". ");
 									System.out.println("\n");
 									System.out.println(
 											"Assinale a alternativa correta, em relação á saída do código acima.");
@@ -1901,7 +1926,7 @@ public class the_prison {
 									switch (resposta) {
 									case "a":
 									case "A":
-										if (alternativa3[0] == (" ")) {
+										if (alternativa3[0] == ("if; if ... else; switch.")) {
 											System.out.println("Resposta Correta.");
 											System.out.println("\n");
 											acertou = true;
@@ -1923,7 +1948,7 @@ public class the_prison {
 										break;
 									case "b":
 									case "B":
-										if (alternativa3[1] == (" ")) {
+										if (alternativa3[1] == ("if; if ... else; switch.")) {
 											System.out.println("Resposta Correta.");
 											System.out.println("\n");
 											acertou = true;
@@ -1945,7 +1970,7 @@ public class the_prison {
 										break;
 									case "c":
 									case "C":
-										if (alternativa3[2] == (" ")) {
+										if (alternativa3[2] == ("if; if ... else; switch.")) {
 											System.out.println("Resposta Correta.");
 											System.out.println("\n");
 											acertou = true;
@@ -1967,7 +1992,7 @@ public class the_prison {
 										break;
 									case "d":
 									case "D":
-										if (alternativa3[3] == (" ")) {
+										if (alternativa3[3] == ("if; if ... else; switch.")) {
 											System.out.println("Resposta Correta.");
 											System.out.println("\n");
 											acertou = true;
@@ -1989,7 +2014,7 @@ public class the_prison {
 										break;
 									case "e":
 									case "E":
-										if (alternativa3[4] == (" ")) {
+										if (alternativa3[4] == ("if; if ... else; switch.")) {
 											System.out.println("Resposta Correta.");
 											System.out.println("\n");
 											acertou = true;
