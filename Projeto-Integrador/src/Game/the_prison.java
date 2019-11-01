@@ -156,12 +156,12 @@ public class the_prison {
 						dificuldade();
 						opcao = imput.nextInt();
 
-																			// DIFICULDADE: FÁCIL
-						
+						// DIFICULDADE: FÁCIL
+
 						if (opcao == 1) { // DIFICULDADE: FÁCIL
 							System.out.println("Informe seu nome detento:");
 							usuario = imput2.nextLine();
-							
+
 							boolean acertou = false;
 							int contador = 0;
 							String alternativa1[] = new String[5];
@@ -322,7 +322,7 @@ public class the_prison {
 							navegacao = imput.nextInt();
 							if (navegacao == 1) {
 
-																			// QUESTÃO DE NÚMERO 2: FÁCIL
+								// QUESTÃO DE NÚMERO 2: FÁCIL
 								acertou = false;
 								contador = 0;
 								String alternativa2[] = new String[5];
@@ -486,7 +486,7 @@ public class the_prison {
 							System.out.println("Digite 1 para continuar.");
 							navegacao = imput.nextInt();
 
-																			// QUESTÃO DE NÚMERO 3: FÁCIL
+							// QUESTÃO DE NÚMERO 3: FÁCIL
 							if (navegacao == 1) {
 								acertou = false;
 								contador = 0;
@@ -651,7 +651,7 @@ public class the_prison {
 							System.out.println("Digite 1 para continuar.");
 							navegacao = imput.nextInt();
 
-							//4 questao facil						
+							// 4 questao facil
 							if (navegacao == 1) {
 								acertou = false;
 								contador = 0;
@@ -832,9 +832,9 @@ public class the_prison {
 								String alternativa5[] = new String[5];
 								alternativa5[0] = "O resultado final será n3 = 9.";
 								alternativa5[1] = "O resultado final será n3 = 29.";
-								alternativa5[2] = "O resultado final será n3 = 18."; 
+								alternativa5[2] = "O resultado final será n3 = 18.";
 								alternativa5[3] = "O resultado final será n3 = 28.";
-								alternativa5[4] = "O resultado final será n3 = 38.";  // resposta correta
+								alternativa5[4] = "O resultado final será n3 = 38."; // resposta correta
 
 								System.out.println("\n");
 								System.out.println(
@@ -854,15 +854,12 @@ public class the_prison {
 
 								do {
 									embaralhar(alternativa5);
-									System.out.println(" Assinale a alternativa que mostra exatamente o que será impresso de acordo com o \n"
-											+ "pseudocódigo abaixo, caso o usuário insira o valor 10 para n1.");
-									System.out.println("inicio\n"
-											+ "inteiro: n1,n2,n3;\n"
-											+ "leia (n1);\n"
-											+ "n2<-n1*3;\n"
-											+ "n3<-n1-2+n2;\n"
-											+ "imprima(\"O resultado final será n3=\",n3);\n"
-											+ "fim");
+									System.out.println(
+											" Assinale a alternativa que mostra exatamente o que será impresso de acordo com o \n"
+													+ "pseudocódigo abaixo, caso o usuário insira o valor 10 para n1.");
+									System.out.println("inicio\n" + "inteiro: n1,n2,n3;\n" + "leia (n1);\n"
+											+ "n2<-n1*3;\n" + "n3<-n1-2+n2;\n"
+											+ "imprima(\"O resultado final será n3=\",n3);\n" + "fim");
 									System.out.println("\n");
 									System.out.println("a) " + alternativa5[0]);
 									System.out.println("b) " + alternativa5[1]);
@@ -1001,17 +998,17 @@ public class the_prison {
 								System.out.println("Digite 0 para voltar ao menu principal.");
 								navegacao = imput.nextInt();
 							}
-						
+
 						}
-																			//DIFICULDADE: NORMAL
-						
+						// DIFICULDADE: NORMAL
+
 						if (opcao == 2) { // DIFICULDADE: NORMAL
 
-																		// QUESTÃO DE NÚMERO 1: NORMAL
-							
+							// QUESTÃO DE NÚMERO 1: NORMAL
+
 							System.out.println("Informe seu nome detento:");
 							usuario = imput2.next();
-							
+
 							boolean acertou = false;
 							int contador = 0;
 							String alternativa1[] = new String[5];
@@ -1171,8 +1168,8 @@ public class the_prison {
 							navegacao = imput.nextInt();
 
 							if (navegacao == 1) {
-																			// QUESTÃO DE NÚMERO 2: NORMAL
-								
+								// QUESTÃO DE NÚMERO 2: NORMAL
+
 								acertou = false;
 								contador = 0;
 								String alternativa2[] = new String[5];
@@ -1335,8 +1332,8 @@ public class the_prison {
 							System.out.println("Digite 1 para continuar.");
 							navegacao = imput.nextInt();
 
-																		// QUESTÃO DE NÚMERO 3: NORMAL
-							
+							// QUESTÃO DE NÚMERO 3: NORMAL
+
 							if (navegacao == 1) {
 								acertou = false;
 								contador = 0;
@@ -1501,8 +1498,8 @@ public class the_prison {
 							System.out.println("Parabéns você passou do terceiro nível.");
 							System.out.println("Digite 1 para continuar.");
 							navegacao = imput.nextInt();
-																		// QUESTÃO DE NÚMERO 4: NORMAL
-							
+							// QUESTÃO DE NÚMERO 4: NORMAL
+
 							if (navegacao == 1) {
 
 								acertou = false;
@@ -1674,8 +1671,8 @@ public class the_prison {
 							System.out.println("Digite 1 para continuar.");
 							navegacao = imput.nextInt();
 
-																			// QUESTÃO DE NÚMERO 5: NORMAL
-							
+							// QUESTÃO DE NÚMERO 5: NORMAL
+
 							if (navegacao == 1) {
 								acertou = false;
 								contador = 0;
@@ -1725,7 +1722,7 @@ public class the_prison {
 											System.out.println("Resposta Correta! ");
 											System.out.println("\n");
 											acertou = true;
-											total = ponto + pontoG; 
+											total = ponto + pontoG;
 											ponto = total;
 											System.out.printf("|ID => %s |Pontos => %d |", usuario, total);
 											System.out.println("\r\n");
@@ -1836,15 +1833,15 @@ public class the_prison {
 							System.out.println("Digite 0 para voltar ao menu principal.");
 							navegacao = imput.nextInt();
 						}
-																			//DIFICULDADE: DIFÍCIL
-						
+						// DIFICULDADE: DIFÍCIL
+
 						if (opcao == 3) { // DIFICULDADE: DIFÍCIL
 
-																		// QUESTÃO DE NÚMERO 1: DIFÍCIL
-							
+							// QUESTÃO DE NÚMERO 1: DIFÍCIL
+
 							System.out.println("Informe seu nome detento:");
 							usuario = imput2.next();
-							
+
 							boolean acertou = false;
 							int contador = 0;
 							String alternativa1[] = new String[5];
@@ -1875,7 +1872,8 @@ public class the_prison {
 							do {
 								embaralhar(alternativa1);
 								// ALTERNATIVA NO SYSTEM ABAIXO
-								System.out.println("Em relação aos delimitadores de blocos em JAVA, marque a alternativa VERDADEIRA: ");
+								System.out.println(
+										"Em relação aos delimitadores de blocos em JAVA, marque a alternativa VERDADEIRA: ");
 								System.out.println("\n");
 								System.out
 										.println("Assinale a alternativa correta, em relação á saída do código acima.");
@@ -1894,7 +1892,7 @@ public class the_prison {
 								switch (resposta) {
 								case "a":
 								case "A":
-									if (alternativa1[0] == ("{ ” e “ }")) {
+									if (alternativa1[0] == (" “ { ” e “ } ” ")) {
 										System.out.println("Resposta Correta.");
 										System.out.println("\n");
 										acertou = true;
@@ -1916,7 +1914,7 @@ public class the_prison {
 									break;
 								case "b":
 								case "B":
-									if (alternativa1[1] == ("{ ” e “ }")) {
+									if (alternativa1[1] == (" “ { ” e “ } ” ")) {
 										System.out.println("Resposta Correta.");
 										System.out.println("\n");
 										acertou = true;
@@ -1938,7 +1936,7 @@ public class the_prison {
 									break;
 								case "c":
 								case "C":
-									if (alternativa1[2] == ("{ ” e “ }")) {
+									if (alternativa1[2] == (" “ { ” e “ } ” ")) {
 										System.out.println("Resposta Correta.");
 										System.out.println("\n");
 										acertou = true;
@@ -1960,7 +1958,7 @@ public class the_prison {
 									break;
 								case "d":
 								case "D":
-									if (alternativa1[3] == ("{ ” e “ }")) {
+									if (alternativa1[3] == (" “ { ” e “ } ” ")) {
 										System.out.println("Resposta Correta.");
 										System.out.println("\n");
 										acertou = true;
@@ -1982,7 +1980,7 @@ public class the_prison {
 									break;
 								case "e":
 								case "E":
-									if (alternativa1[4] == ("{ ” e “ }")) {
+									if (alternativa1[4] == (" “ { ” e “ } ” ")) {
 										System.out.println("Resposta Correta.");
 										System.out.println("\n");
 										acertou = true;
@@ -2014,20 +2012,22 @@ public class the_prison {
 								System.out.println("GAME OVER.");
 								break;
 							}
-							
-							//feedback
-							//Um bloco é definido por ({}) e contém um grupo de outros blocos. Quando um novo
-							//bloco é criado um novo escopo local é aberto e permite a definição de variáveis locais. As
-							//variáveis definidas dentro de um bloco só podem ser vistas internamente a este, e são
-							//terminadas ou extintas no final da execução deste(}).
-							 
+
+							// feedback
+							// Um bloco é definido por ({}) e contém um grupo de outros blocos. Quando um
+							// novo
+							// bloco é criado um novo escopo local é aberto e permite a definição de
+							// variáveis locais. As
+							// variáveis definidas dentro de um bloco só podem ser vistas internamente a
+							// este, e são
+							// terminadas ou extintas no final da execução deste(}).
 
 							System.out.println("Parabéns você passou do primeiro nível.");
 							System.out.println("Digite 1 para continuar.");
 							navegacao = imput.nextInt();
 
-																	// QUESTÃO DE NÚMERO 2: DIFÍCIL
-							
+							// QUESTÃO DE NÚMERO 2: DIFÍCIL
+
 							if (navegacao == 1) {
 
 								acertou = false;
@@ -2063,24 +2063,20 @@ public class the_prison {
 								do {
 									embaralhar(alternativa2);
 									// ALTERNATIVA NO SYSTEM ABAIXO
-									System.out.println(" Com relação a funções e procedimentos na linguagem JAVA, analise o programa abaixo desenvolvido no ambiente Netbeans 7.3:\r\n" + 
-											"\r\n" + 
-											"public class Fibonacci {\r\n" + 
-											"        static long f (int n) {\r\n" + 
-											"              if (n < 2) {\r\n" + 
-											"                   return n;\r\n" + 
-											"              }else {\r\n" + 
-											"                  return f(n - 1) + f {n - 2);\r\n" + 
-											"              }\r\n" + 
-											"        }\r\n" + 
-											"        public static void main(String[ ] args) {\r\n" + 
-											"        int i ;\r\n" + 
-											"        for  ( i = 0; i < 8; i++) { }\r\n" + 
-											"              System.out.println (f (i)) ;\r\n" + 
-											"        }\r\n" + 
-											"}\r\n" + 
-											"\r\n" + 
-											"Assinale a opção que apresenta o valor que será impresso pelo programa acima. ");
+									System.out.println(
+											" Com relação a funções e procedimentos na linguagem JAVA, analise o programa abaixo desenvolvido no ambiente Netbeans 7.3:\r\n"
+													+ "\r\n" + "public class Fibonacci {\r\n"
+													+ "        static long f (int n) {\r\n"
+													+ "              if (n < 2) {\r\n"
+													+ "                   return n;\r\n" + "              }else {\r\n"
+													+ "                  return f(n - 1) + f {n - 2);\r\n"
+													+ "              }\r\n" + "        }\r\n"
+													+ "        public static void main(String[ ] args) {\r\n"
+													+ "        int i ;\r\n"
+													+ "        for  ( i = 0; i < 8; i++) { }\r\n"
+													+ "              System.out.println (f (i)) ;\r\n" + "        }\r\n"
+													+ "}\r\n" + "\r\n"
+													+ "Assinale a opção que apresenta o valor que será impresso pelo programa acima. ");
 									System.out.println("\n");
 									System.out.println(
 											"Assinale a alternativa correta, em relação á saída do código acima.");
@@ -2224,8 +2220,8 @@ public class the_prison {
 							System.out.println("Digite 1 para continuar.");
 							navegacao = imput.nextInt();
 
-																		// QUESTÃO NÚMERO 3: DIFÍCIL
-							
+							// QUESTÃO NÚMERO 3: DIFÍCIL
+
 							if (navegacao == 1) {
 
 								acertou = false;
@@ -2257,8 +2253,9 @@ public class the_prison {
 								do {
 									embaralhar(alternativa3);
 									// ALTERNATIVA NO SYSTEM ABAIXO
-									System.out.println(" Acerca da programação orientada a objetos, usando Java, analise a seguinte assertiva:"
-											+ " “O Java contém três tipos de instruções de seleção\". ");
+									System.out.println(
+											" Acerca da programação orientada a objetos, usando Java, analise a seguinte assertiva:"
+													+ " “O Java contém três tipos de instruções de seleção\". ");
 									System.out.println("\n");
 									System.out.println(
 											"Assinale a alternativa correta, em relação á saída do código acima.");
@@ -2402,8 +2399,8 @@ public class the_prison {
 							System.out.println("Digite 1 para continuar.");
 							navegacao = imput.nextInt();
 
-																			// QUESTÃO NÚMERO 4: DIFÍCIL
-							
+							// QUESTÃO NÚMERO 4: DIFÍCIL
+
 							if (navegacao == 1) {
 
 								acertou = false;
@@ -2579,8 +2576,8 @@ public class the_prison {
 							System.out.println("Digite 1 para continuar.");
 							navegacao = imput.nextInt();
 
-																			// QUESTÃO NÚMERO 5: DIFÍCIL
-							
+							// QUESTÃO NÚMERO 5: DIFÍCIL
+
 							if (navegacao == 1) {
 
 								acertou = false;
@@ -2791,7 +2788,7 @@ public class the_prison {
 					System.out.println("\r\n");
 					System.out.println("Digite 0 para voltar para o menu.");
 					navegacao = imput.nextInt();
-					
+
 				} while (navegacao != 0);
 
 				break;
@@ -2802,12 +2799,12 @@ public class the_prison {
 
 			default:
 				System.out.println("Opção inválida.");
-		
-		}
 
-		}while(opcao!=4);
+			}
 
-}
+		} while (opcao != 4);
+
+	}
 
 }
 // THE AND
