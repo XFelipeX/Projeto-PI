@@ -2407,11 +2407,11 @@ public class the_prison {
 								contador = 0;
 
 								String alternativa4[] = new String[5];
-								alternativa4[0] = " ";
-								alternativa4[1] = " "; // RESPOSTA CORRETA
-								alternativa4[2] = " ";
-								alternativa4[3] = " ";
-								alternativa4[4] = " ";
+								alternativa4[0] = "8388608 a 8388607. ";
+								alternativa4[1] = "128 a 127. "; 
+								alternativa4[2] = "32768 a 32767. ";
+								alternativa4[3] = "9223372036854775808 a 9223372036854775807. ";
+								alternativa4[4] = "2147483648 a 2147483647. ";// Resposta correta
 
 								System.out.println("\n");
 								System.out.println(
@@ -2432,10 +2432,11 @@ public class the_prison {
 								do {
 									embaralhar(alternativa4);
 									// ALTERNATIVA NO SYSTEM ABAIXO
-									System.out.println(" *** ");
+									System.out.println(" No Java,um tipo inteiro (int) utiliza quatro bytes para armazenamento.\r\n"
+											+ "a faixa máxima possível de valores inteiros para se armazenar em uma variável do tipo \r\n"
+											+ "primitivo int é de: \r\n");
 									System.out.println("\n");
-									System.out.println(
-											"Assinale a alternativa correta, em relação á saída do código acima.");
+									
 									System.out.println("\n");
 
 									System.out.println("a) " + alternativa4[0]);
@@ -2444,14 +2445,14 @@ public class the_prison {
 									System.out.println("d) " + alternativa4[3]);
 									System.out.println("e) " + alternativa4[4]);
 									System.out.println("\n");
-									System.out.println("Qual é a alternativa correta?");
+									
 									String resposta = imput.next();
 
 									System.out.println("\n");
 									switch (resposta) {
 									case "a":
 									case "A":
-										if (alternativa4[0] == (" ")) {
+										if (alternativa4[0] == (" 2147483648 a 2147483647.")) {
 											System.out.println("Resposta Correta.");
 											System.out.println("\n");
 											acertou = true;
@@ -2473,7 +2474,7 @@ public class the_prison {
 										break;
 									case "b":
 									case "B":
-										if (alternativa4[1] == (" ")) {
+										if (alternativa4[1] == ("2147483648 a 2147483647. ")) {
 											System.out.println("Resposta Correta.");
 											System.out.println("\n");
 											acertou = true;
@@ -2495,7 +2496,7 @@ public class the_prison {
 										break;
 									case "c":
 									case "C":
-										if (alternativa4[2] == (" ")) {
+										if (alternativa4[2] == (" 2147483648 a 2147483647.")) {
 											System.out.println("Resposta Correta.");
 											System.out.println("\n");
 											acertou = true;
@@ -2517,7 +2518,7 @@ public class the_prison {
 										break;
 									case "d":
 									case "D":
-										if (alternativa4[3] == (" ")) {
+										if (alternativa4[3] == (" 2147483648 a 2147483647.")) {
 											System.out.println("Resposta Correta.");
 											System.out.println("\n");
 											acertou = true;
@@ -2539,7 +2540,7 @@ public class the_prison {
 										break;
 									case "e":
 									case "E":
-										if (alternativa4[4] == (" ")) {
+										if (alternativa4[4] == ("2147483648 a 2147483647. ")) {
 											System.out.println("Resposta Correta.");
 											System.out.println("\n");
 											acertou = true;
