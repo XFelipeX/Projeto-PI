@@ -2584,11 +2584,11 @@ public class the_prison {
 								contador = 0;
 
 								String alternativa5[] = new String[5];
-								alternativa5[0] = " ";
-								alternativa5[1] = " "; // RESPOSTA CORRETA
-								alternativa5[2] = " ";
-								alternativa5[3] = " ";
-								alternativa5[4] = " ";
+								alternativa5[0] = "2,8";
+								alternativa5[1] = "0"; // RESPOSTA CORRETA
+								alternativa5[2] = "5";
+								alternativa5[3] = "1";
+								alternativa5[4] = "0,3";
 
 								System.out.println("\n");
 								System.out.println(
@@ -2611,6 +2611,17 @@ public class the_prison {
 									// ALTERNATIVA NO SYSTEM ABAIXO
 									System.out.println(" *** ");
 									System.out.println("\n");
+									System.out.println("Algoritmo blank_01"); 
+									System.out.println("	Var cont, res, n, x : Inteiro"); 
+									System.out.println("	Inicio"); 
+									System.out.println("		cont <- n, res <- 0, x <- 2, n <- 4"); 
+									System.out.println("		enquanto (cont>=n) faca"); 
+									System.out.println("			res <- res * x"); 
+									System.out.println("			cont <- cont + 1"); 
+									System.out.println("		fimenquanto"); 
+									System.out.println("	escreva(res)"); 
+									System.out.println("	fimalgoritmo"); 
+									System.out.println("\n");
 									System.out.println(
 											"Assinale a alternativa correta, em relação á saída do código acima.");
 									System.out.println("\n");
@@ -2628,7 +2639,7 @@ public class the_prison {
 									switch (resposta) {
 									case "a":
 									case "A":
-										if (alternativa5[0] == (" ")) {
+										if (alternativa5[0] == ("0")) {
 											System.out.println("Resposta Correta.");
 											System.out.println("\n");
 											acertou = true;
@@ -2650,7 +2661,7 @@ public class the_prison {
 										break;
 									case "b":
 									case "B":
-										if (alternativa5[1] == (" ")) {
+										if (alternativa5[1] == ("0")) {
 											System.out.println("Resposta Correta.");
 											System.out.println("\n");
 											acertou = true;
@@ -2672,7 +2683,7 @@ public class the_prison {
 										break;
 									case "c":
 									case "C":
-										if (alternativa5[2] == (" ")) {
+										if (alternativa5[2] == ("0")) {
 											System.out.println("Resposta Correta.");
 											System.out.println("\n");
 											acertou = true;
@@ -2694,7 +2705,7 @@ public class the_prison {
 										break;
 									case "d":
 									case "D":
-										if (alternativa5[3] == (" ")) {
+										if (alternativa5[3] == ("0")) {
 											System.out.println("Resposta Correta.");
 											System.out.println("\n");
 											acertou = true;
@@ -2716,7 +2727,7 @@ public class the_prison {
 										break;
 									case "e":
 									case "E":
-										if (alternativa5[4] == (" ")) {
+										if (alternativa5[4] == ("0")) {
 											System.out.println("Resposta Correta.");
 											System.out.println("\n");
 											acertou = true;
