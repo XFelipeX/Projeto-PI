@@ -4,6 +4,37 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class the_prison {
+	static void game_over() {
+		System.out.println("/////////////////////////////////////");
+		System.out.println("||||||||||||| GAME OVER |||||||||||||");
+		System.out.println("/////////////////////////////////////");
+		System.out.println("\n");
+		System.out.println("´´´¶¶¶¶´´´´´´´´´´s¶¶¶¶¶´´´´´´´´´´´s¶¶¶\r\n" + 
+				"´´´´¶¶¶¶¢´´´´´7¶¶¶¶¶¶¶¶¶¶¶¶¶´´´´´´´¶¶¶¶\r\n" + 
+				"´´´7¶¶¶¶¢´´´¢¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶´´´´s¶¶¶¶s\r\n" + 
+				"´´¶¶¶¶¶¶¶¶´ø¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶1´¶¶¶¶¶¶¶¶\r\n" + 
+				"´´¢øs$¶¶¶¶1¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶´¶¶¶¶¢¢$$\r\n" + 
+				"´´´´´´´´7¢ø¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶s´ø\r\n" + 
+				"´´´´´´´´´´¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\r\n" + 
+				"´´´´´´´´´´1¶¶¶¶ø´´7¶¶¶¶¶1´ø¶¶¶¶¶s\r\n" + 
+				"´´´´´´´´´´´¶¶´´´´´´´¶¶¶´´´´´´s¶¶\r\n" + 
+				"´´´´´´´´´´1¶¶´´´´´´$¶¶¶1´´´´´´¶¶1\r\n" + 
+				"´´´´´´´´´´´¶¶¶´´s¶¶¶´´ø¶¶s´´¶¶¶¶\r\n" + 
+				"´´´´´´´´´´´7¶¶¶¶¶¶¶¶´´´¶¶¶¶¶¶¶¶1\r\n" + 
+				"´´´´´´´´´´´´´¶¶¶¶¶¶¶s$s¶¶¶¶¶¶\r\n" + 
+				"´´´´´´´´´´´ø¶´¶s¶¶¶¶¶¶¶¶¶¶¶´¶´¶s\r\n" + 
+				"´´´´7´´´´$¶¶¶´¶´´´´´´´´´´´$´¶¶¶¶¶\r\n" + 
+				"´1¶¶¶¶¶¶¶¶¶¶ø´¶´¶¶$¶¶$¶¶$¶7¶1´¶¶¶¶¶¶¶¶¶¶¶\r\n" + 
+				"´´¶¶¶¶¶¶¶¶´´´´¶¶¶¶¶¶¶¶¶¶¶¶¶¶1´´´¶¶¶¶¶¶¶¶¶\r\n" + 
+				"´´´ø¶¶¶¶¶´´´´´´1¶¶¶¶¶¶¶¶¶¶¢´´´´´´¶¶¶¶¶¶¶\r\n" + 
+				"´´´´´s¶¶ø´´´´´´´´´$¶¶¶¶¶s´´´´´´´´1¶¶¶\r\n" + 
+				"\r\n" + 
+				"\r\n" + 
+				"");
+		System.out.println("/////////////////////////////////////");
+		System.out.println("||||||||||||| GAME OVER |||||||||||||");
+		System.out.println("/////////////////////////////////////");
+	}
 	static void dificuldade() {
 		System.out.println(
 				"-------------------------------------------------------------------------------------------------------");
@@ -44,7 +75,6 @@ public class the_prison {
 	}
 
 	static void embaralhar(String Vetor[]) { // FUNÇÃO QUE EMBARALHA AS ALTERNATIVAS CONTIDAS NO VETOR
-
 		Random random = new Random();
 
 		for (int i = 0; i < Vetor.length; i++) {
@@ -2241,7 +2271,7 @@ public class the_prison {
 										"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
 								System.out.println(
 										"| | |                                                                                             | | |");
-								System.out.println("| | | (Guarda)  ...");
+								System.out.println("| | | (Guarda)  ");
 								System.out.println(
 										"| | |                                                                                             | | |");
 								System.out.println(
@@ -2420,7 +2450,8 @@ public class the_prison {
 										"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
 								System.out.println(
 										"| | |                                                                                             | | |");
-								System.out.println("| | | (Guarda)  ...");
+								System.out.println("| | | (Guarda) José Jobs: ZzzZzZZz      ZzzZzzZ   huur "
+										+ "Verme insolente, me acordou e acha que vai sair desta tão fácil assim? ");
 								System.out.println(
 										"| | |                                                                                             | | |");
 								System.out.println(
@@ -2597,7 +2628,8 @@ public class the_prison {
 										"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
 								System.out.println(
 										"| | |                                                                                             | | |");
-								System.out.println("| | | (Diretor) Gavin Belson... ");
+								System.out.println("| | | (Diretor) Gavin Belson: Um forasteiro! como ousa vir tão longe, achou mesmo "
+										+ "que iria tão longe sem ser pego? não fique triste... lembre-se que todo fim tem um novo começo muahahaha!! ");
 								System.out.println(
 										"| | |                                                                                             | | |");
 								System.out.println(
