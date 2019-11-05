@@ -4,6 +4,10 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class the_prison {
+	static boolean perdeu(boolean opcao) {
+		opcao = false;
+		return opcao;
+	}
 	static void game_over() {
 		System.out.println("/////////////////////////////////////");
 		System.out.println("||||||||||||| GAME OVER |||||||||||||");
@@ -93,16 +97,19 @@ public class the_prison {
 		 * pontoG == PONTOS GANHOS pontoP == PONTOS PERDIDOS TESTANDO, DEPOIS MUDAR
 		 * 
 		 */
-		Scanner imput = new Scanner(System.in);
-		Scanner imput2 = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
+		Scanner input2 = new Scanner(System.in);
 
 		// DECLARAÇÃO DE VARIAVÉIS
 		int ponto = 100, total = 0, pontoG = 100, pontoP = 50, opcao, navegacao = 1;
 		String usuario = "";
+		boolean exit =true;
 
+		boolean sair= true;
 		do {
 			menu();
-			opcao = imput.nextInt();
+			System.out.println("Inicio");
+			opcao = input.nextInt();
 
 			switch (opcao) {
 
@@ -140,7 +147,7 @@ public class the_prison {
 							"-------------------------------------------------------------------------------------------------------");
 					System.out.println("\n");
 					System.out.println("Digite 0 para voltar.");
-					navegacao = imput.nextInt();
+					navegacao = input.nextInt();
 
 				} while (navegacao != 0);
 
@@ -181,16 +188,16 @@ public class the_prison {
 					System.out.println("\n");
 					System.out.println("Digite 0 para voltar e 1 para começar o jogo.");
 
-					navegacao = imput.nextInt();
+					navegacao = input.nextInt();
 					if (navegacao == 1) {
 						dificuldade();
-						opcao = imput.nextInt();
+						opcao = input.nextInt();
 
 						// DIFICULDADE: FÁCIL
 
 						if (opcao == 1) { // DIFICULDADE: FÁCIL
 							System.out.println("Informe seu nome detento:");
-							usuario = imput2.nextLine();
+							usuario = input2.nextLine();
 
 							boolean acertou = false;
 							int contador = 0;
@@ -231,7 +238,7 @@ public class the_prison {
 								System.out.println("e) " + alternativa1[4]);
 								System.out.println("\n");
 								System.out.print("Qual a alternativa certa?: ");
-								String resposta = imput.next();
+								String resposta = input.next();
 
 								System.out.println("\n");
 								switch (resposta) {
@@ -344,12 +351,13 @@ public class the_prison {
 							} while (!acertou && contador <= 2);
 							if (acertou == false) {
 								System.out.println("GAME OVER.");
+								perdeu(exit);
 								break;
 
 							}
 							System.out.println("Parabéns voce passou do primeiro nível.");
 							System.out.println("Digite 1 para continuar.");
-							navegacao = imput.nextInt();
+							navegacao = input.nextInt();
 							if (navegacao == 1) {
 
 								// QUESTÃO DE NÚMERO 2: FÁCIL
@@ -395,7 +403,7 @@ public class the_prison {
 
 									System.out.println("\n");
 									System.out.print("Qual a alternativa certa?: ");
-									String resposta = imput.next();
+									String resposta = input.next();
 
 									System.out.println("\n");
 									switch (resposta) {
@@ -514,7 +522,7 @@ public class the_prison {
 							}
 							System.out.println("Parabéns voce passou do segundo nível.");
 							System.out.println("Digite 1 para continuar.");
-							navegacao = imput.nextInt();
+							navegacao = input.nextInt();
 
 							// QUESTÃO DE NÚMERO 3: FÁCIL
 							if (navegacao == 1) {
@@ -561,7 +569,7 @@ public class the_prison {
 
 									System.out.println("\n");
 									System.out.print("Qual a alternativa certa?: ");
-									String resposta = imput.next();
+									String resposta = input.next();
 
 									System.out.println("\n");
 									switch (resposta) {
@@ -679,7 +687,7 @@ public class the_prison {
 							}
 							System.out.println("Parabéns você passou do terceiro nível.");
 							System.out.println("Digite 1 para continuar.");
-							navegacao = imput.nextInt();
+							navegacao = input.nextInt();
 
 							// 4 questao facil
 							if (navegacao == 1) {
@@ -724,7 +732,7 @@ public class the_prison {
 
 									System.out.println("\n");
 									System.out.print("Qual a alternativa certa?: ");
-									String resposta = imput.next();
+									String resposta = input.next();
 
 									System.out.println("\n");
 									switch (resposta) {
@@ -852,7 +860,7 @@ public class the_prison {
 							}
 							System.out.println("Parabéns você passou do quarto nível.");
 							System.out.println("Digite 1 para continuar.");
-							navegacao = imput.nextInt();
+							navegacao = input.nextInt();
 
 //05 Questão facil
 							if (navegacao == 1) {
@@ -899,7 +907,7 @@ public class the_prison {
 
 									System.out.println("\n");
 
-									String resposta = imput.next();
+									String resposta = input.next();
 
 									System.out.println("\n");
 									switch (resposta) {
@@ -1026,7 +1034,7 @@ public class the_prison {
 								}
 								System.out.println("Parabéns você escapou da prisão!!");
 								System.out.println("Digite 0 para voltar ao menu principal.");
-								navegacao = imput.nextInt();
+								navegacao = input.nextInt();
 							}
 
 						}
@@ -1037,7 +1045,7 @@ public class the_prison {
 							// QUESTÃO DE NÚMERO 1: NORMAL
 
 							System.out.println("Informe seu nome detento:");
-							usuario = imput2.next();
+							usuario = input2.next();
 
 							boolean acertou = false;
 							int contador = 0;
@@ -1077,7 +1085,7 @@ public class the_prison {
 								System.out.println("e) " + alternativa1[4]);
 								System.out.println("\n");
 								System.out.print("Qual a alternativa certa?: ");
-								String resposta = imput.next();
+								String resposta = input.next();
 
 								System.out.println("\n");
 								switch (resposta) {
@@ -1190,12 +1198,13 @@ public class the_prison {
 							} while (!acertou && contador <= 2);
 							if (acertou == false) {
 								System.out.println("GAME OVER.");
+								sair= perdeu(sair);
 								break;
 
 							}
 							System.out.println("Parabéns voce passou do primeiro nível.");
 							System.out.println("Digite 1 para continuar.");
-							navegacao = imput.nextInt();
+							navegacao = input.nextInt();
 
 							if (navegacao == 1) {
 								// QUESTÃO DE NÚMERO 2: NORMAL
@@ -1241,7 +1250,7 @@ public class the_prison {
 
 									System.out.println("\n");
 									System.out.print("Qual a alternativa certa?: ");
-									String resposta = imput.next();
+									String resposta = input.next();
 
 									System.out.println("\n");
 									switch (resposta) {
@@ -1354,13 +1363,14 @@ public class the_prison {
 								} while (!acertou && contador <= 2);
 								if (acertou == false) {
 									System.out.println("GAME OVER.");
+									sair= perdeu(sair);
 									break;
 
 								}
 							}
 							System.out.println("Parabéns voce passou do segundo nível.");
 							System.out.println("Digite 1 para continuar.");
-							navegacao = imput.nextInt();
+							navegacao = input.nextInt();
 
 							// QUESTÃO DE NÚMERO 3: NORMAL
 
@@ -1409,7 +1419,7 @@ public class the_prison {
 
 									System.out.println("\n");
 									System.out.print("Qual a alternativa certa?: ");
-									String resposta = imput.next();
+									String resposta = input.next();
 
 									System.out.println("\n");
 									switch (resposta) {
@@ -1521,13 +1531,14 @@ public class the_prison {
 								} while (!acertou && contador <= 2);
 								if (acertou == false) {
 									System.out.println("GAME OVER.");
+									sair= perdeu(sair);
 									break;
 
 								}
 							}
 							System.out.println("Parabéns você passou do terceiro nível.");
 							System.out.println("Digite 1 para continuar.");
-							navegacao = imput.nextInt();
+							navegacao = input.nextInt();
 							// QUESTÃO DE NÚMERO 4: NORMAL
 
 							if (navegacao == 1) {
@@ -1580,7 +1591,7 @@ public class the_prison {
 									System.out.println("e) " + alternativa4[4]);
 									System.out.println("\n");
 									System.out.println("Qual é a alternativa correta?");
-									String resposta = imput.next();
+									String resposta = input.next();
 
 									System.out.println("\n");
 									switch (resposta) {
@@ -1694,12 +1705,13 @@ public class the_prison {
 
 								if (acertou == false) {
 									System.out.println("GAME OVER.");
+									sair= perdeu(sair);
 									break;
 								}
 							}
 							System.out.println("Parabéns você passou do quarto nível.");
 							System.out.println("Digite 1 para continuar.");
-							navegacao = imput.nextInt();
+							navegacao = input.nextInt();
 
 							// QUESTÃO DE NÚMERO 5: NORMAL
 
@@ -1742,7 +1754,7 @@ public class the_prison {
 
 									System.out.println("\n");
 
-									String resposta = imput.next();
+									String resposta = input.next();
 
 									System.out.println("\n");
 									switch (resposta) {
@@ -1855,13 +1867,14 @@ public class the_prison {
 								} while (!acertou && contador <= 2);
 								if (acertou == false) {
 									System.out.println("GAME OVER.");
+									sair= perdeu(sair);
 									break;
 
 								}
 							}
 							System.out.println("Parabéns você escapou da prisão!!");
 							System.out.println("Digite 0 para voltar ao menu principal.");
-							navegacao = imput.nextInt();
+							navegacao = input.nextInt();
 						}
 						// DIFICULDADE: DIFÍCIL
 
@@ -1870,7 +1883,7 @@ public class the_prison {
 							// QUESTÃO DE NÚMERO 1: DIFÍCIL
 
 							System.out.println("Informe seu nome detento:");
-							usuario = imput2.next();
+							usuario = input2.next();
 
 							boolean acertou = false;
 							int contador = 0;
@@ -1916,7 +1929,7 @@ public class the_prison {
 								System.out.println("e) " + alternativa1[4]);
 								System.out.println("\n");
 								System.out.println("Qual é a alternativa correta?");
-								String resposta = imput.next();
+								String resposta = input.next();
 
 								System.out.println("\n");
 								switch (resposta) {
@@ -2054,7 +2067,7 @@ public class the_prison {
 
 							System.out.println("Parabéns você passou do primeiro nível.");
 							System.out.println("Digite 1 para continuar.");
-							navegacao = imput.nextInt();
+							navegacao = input.nextInt();
 
 							// QUESTÃO DE NÚMERO 2: DIFÍCIL
 
@@ -2119,7 +2132,7 @@ public class the_prison {
 									System.out.println("e) " + alternativa2[4]);
 									System.out.println("\n");
 									System.out.println("Qual é a alternativa correta?");
-									String resposta = imput.next();
+									String resposta = input.next();
 
 									System.out.println("\n");
 									switch (resposta) {
@@ -2248,7 +2261,7 @@ public class the_prison {
 							}
 							System.out.println("Parabéns você passou do segundo nível.");
 							System.out.println("Digite 1 para continuar.");
-							navegacao = imput.nextInt();
+							navegacao = input.nextInt();
 
 							// QUESTÃO NÚMERO 3: DIFÍCIL
 
@@ -2298,7 +2311,7 @@ public class the_prison {
 									System.out.println("e) " + alternativa3[4]);
 									System.out.println("\n");
 									System.out.println("Qual é a alternativa correta?");
-									String resposta = imput.next();
+									String resposta = input.next();
 
 									System.out.println("\n");
 									switch (resposta) {
@@ -2427,7 +2440,7 @@ public class the_prison {
 							}
 							System.out.println("Parabéns você passou do terceiro nível.");
 							System.out.println("Digite 1 para continuar.");
-							navegacao = imput.nextInt();
+							navegacao = input.nextInt();
 
 							// QUESTÃO NÚMERO 4: DIFÍCIL
 
@@ -2477,7 +2490,7 @@ public class the_prison {
 									System.out.println("e) " + alternativa4[4]);
 									System.out.println("\n");
 									
-									String resposta = imput.next();
+									String resposta = input.next();
 
 									System.out.println("\n");
 									switch (resposta) {
@@ -2606,7 +2619,7 @@ public class the_prison {
 							}
 							System.out.println("Parabéns você passou do quarto nível.");
 							System.out.println("Digite 1 para continuar.");
-							navegacao = imput.nextInt();
+							navegacao = input.nextInt();
 
 							// QUESTÃO NÚMERO 5: DIFÍCIL
 
@@ -2666,7 +2679,7 @@ public class the_prison {
 									System.out.println("e) " + alternativa5[4]);
 									System.out.println("\n");
 									System.out.println("Qual é a alternativa correta?");
-									String resposta = imput.next();
+									String resposta = input.next();
 
 									System.out.println("\n");
 									switch (resposta) {
@@ -2790,12 +2803,13 @@ public class the_prison {
 
 								if (acertou == false) {
 									System.out.println("GAME OVER.");
+									sair= perdeu(sair);
 									break;
 								}
 							}
 							System.out.println("Parabéns você escapou da prisão!!");
 							System.out.println("Digite 0 para voltar ao menu principal.");
-							navegacao = imput.nextInt();
+							navegacao = input.nextInt();
 						}
 
 					} else {
@@ -2831,9 +2845,9 @@ public class the_prison {
 							"-------------------------------------------------------------------------------------------------------");
 					System.out.println("\r\n");
 					System.out.println("Digite 0 para voltar para o menu.");
-					navegacao = imput.nextInt();
+					navegacao = input.nextInt();
 
-				} while (navegacao != 0);
+				} while (navegacao != 0 );
 
 				break;
 
@@ -2846,7 +2860,8 @@ public class the_prison {
 
 			}
 
-		} while (opcao != 4);
+			
+		} while (opcao != 4 && sair==true);
 
 	}
 
