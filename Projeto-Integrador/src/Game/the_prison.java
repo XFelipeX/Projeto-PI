@@ -108,7 +108,6 @@ public class the_prison {
 		boolean sair= true;
 		do {
 			menu();
-			System.out.println("Inicio");
 			opcao = input.nextInt();
 
 			switch (opcao) {
