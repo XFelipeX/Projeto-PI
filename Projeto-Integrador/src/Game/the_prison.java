@@ -2806,10 +2806,11 @@ public class the_prison {
 									sair= perdeu(sair);
 									break;
 								}
+								System.out.println("Parabéns você escapou da prisão!!");
+								System.out.println("Digite 0 para voltar ao menu principal.");
+								navegacao = input.nextInt();
 							}
-							System.out.println("Parabéns você escapou da prisão!!");
-							System.out.println("Digite 0 para voltar ao menu principal.");
-							navegacao = input.nextInt();
+							
 						}
 
 					} else {
