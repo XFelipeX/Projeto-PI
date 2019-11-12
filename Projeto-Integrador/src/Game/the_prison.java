@@ -90,6 +90,23 @@ public class the_prison {
 
 	}
 
+	static void facilQ1 () {
+		System.out.println("FeedBack: Do/While é a respota correta.");
+	}
+	static void facilQ2 () {
+		System.out.println("FeedBack: ");
+	}
+	static void facilQ3 () {
+		System.out.println("FeedBack: ");
+	}
+	static void facilQ4 () {
+		System.out.println("FeedBack: ");
+	}
+	static void facilQ5 () {
+		System.out.println("FeedBack: ");
+		
+	}
+	
 	public static void main(String[] args) {
 		/*
 		 * CÓDIGO PRINCIPAL!
@@ -245,7 +262,9 @@ public class the_prison {
 								case "A":
 									if (alternativa1[0] == ("do/while.")) {
 										System.out.println("Resposta Correta.");
-										System.out.println("\n");
+//funcao questao 1										
+										facilQ1();
+										System.out.println("\n");										
 										acertou = true;
 										total = ponto + pontoG;
 										ponto = total;
@@ -265,7 +284,9 @@ public class the_prison {
 								case "B":
 									if (alternativa1[1] == ("do/while.")) {
 										System.out.println("Resposta Correta.");
-										System.out.println("\n");
+//funcao questao 1											
+										facilQ1();
+										System.out.println("\n");										
 										acertou = true;
 										total = ponto + pontoG;
 										ponto = total;
@@ -285,7 +306,9 @@ public class the_prison {
 								case "C":
 									if (alternativa1[2] == ("do/while.")) {
 										System.out.println("Resposta Correta.");
-										System.out.println("\n");
+//funcao questao 1											
+										facilQ1();
+										System.out.println("\n");										
 										acertou = true;
 										total = ponto + pontoG;
 										ponto = total;
@@ -305,7 +328,9 @@ public class the_prison {
 								case "D":
 									if (alternativa1[3] == ("do/while.")) {
 										System.out.println("Resposta Correta.");
-										System.out.println("\n");
+//funcao questao 1											
+										facilQ1();
+										System.out.println("\n");										
 										acertou = true;
 										total = ponto + pontoG;
 										ponto = total;
@@ -325,7 +350,9 @@ public class the_prison {
 								case "E":
 									if (alternativa1[4] == ("do/while.")) {
 										System.out.println("Resposta Correta.");
-										System.out.println("\n");
+//funcao questao 1											
+										facilQ1();
+										System.out.println("\n");										
 										acertou = true;
 										total = ponto + pontoG;
 										ponto = total;
@@ -349,6 +376,8 @@ public class the_prison {
 								contador++;
 							} while (!acertou && contador <= 2);
 							if (acertou == false) {
+//funcao questao 1									
+								facilQ1();
 								System.out.println("GAME OVER.");
 								perdeu(exit);
 								break;
@@ -410,6 +439,7 @@ public class the_prison {
 									case "A":
 										if (alternativa2[0] == ("escreva e system.out.print")) {
 											System.out.println("Resposta Correta.");
+											facilQ2();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG; //
@@ -430,6 +460,7 @@ public class the_prison {
 									case "B":
 										if (alternativa2[1] == ("escreva e system.out.print")) {
 											System.out.println("Resposta Correta.");
+											facilQ2();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -450,6 +481,7 @@ public class the_prison {
 									case "C":
 										if (alternativa2[2] == ("escreva e system.out.print")) {
 											System.out.println("Resposta Correta.");
+											facilQ2();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -470,6 +502,7 @@ public class the_prison {
 									case "D":
 										if (alternativa2[3] == ("escreva e system.out.print")) {
 											System.out.println("Resposta Correta.");
+											facilQ2();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -490,6 +523,7 @@ public class the_prison {
 									case "E":
 										if (alternativa2[4] == ("escreva e system.out.print")) {
 											System.out.println("Resposta Correta.");
+											facilQ2();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -514,6 +548,7 @@ public class the_prison {
 									contador++;
 								} while (!acertou && contador <= 2);
 								if (acertou == false) {
+									facilQ2();
 									System.out.println("GAME OVER.");
 									break;
 
