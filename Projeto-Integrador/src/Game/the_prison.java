@@ -89,7 +89,7 @@ public class the_prison {
 		}
 
 	}
-
+	//FUÇÃO DO FEEDBACK: FÁCIL
 	static void facilQ1 () {
 		System.out.println("FeedBack: Do/While é a respota correta.");
 	}
@@ -106,6 +106,31 @@ public class the_prison {
 		System.out.println("FeedBack: ");
 		
 	}
+	//FUÇÃO DO FEEDBACK: NORMAL
+	
+	//FUÇÃO DO FEEDBACK: DIFÍCIL
+		static void dificilQ1 () {
+				System.out.println(" feedback\r\n" + 
+						"							 Um bloco é definido por ({}) e contém um grupo de outros blocos. Quando um\r\n" + 
+						"							 novo\r\n" + 
+						"							 bloco é criado um novo escopo local é aberto e permite a definição de\r\n" + 
+						"							 variáveis locais. As\r\n" + 
+						"							 variáveis definidas dentro de um bloco só podem ser vistas internamente a\r\n" + 
+						"							 este, e são\r\n" + 
+						"							 terminadas ou extintas no final da execução deste(}).");
+		}
+		static void dificilQ2 () {
+				System.out.println("");
+		}
+		static void dificilQ3 () {
+				System.out.println("");
+		}
+		static void dificilQ4 () {
+				System.out.println("");
+		}
+		static void dificilQ5 () {
+				System.out.println("");
+		}
 	
 	public static void main(String[] args) {
 		/*
@@ -1936,7 +1961,7 @@ public class the_prison {
 							System.out.println(
 									"| | |                                                                                             | | |");
 							System.out.println(
-									"| | | (Guarda) Bill Gates: Está com dificuldades na faculdade, ajude ele a solucionar             | | |\r\n"
+									"| | | (Guarda) José Gates: Está com dificuldades na faculdade, ajude ele a solucionar             | | |\r\n"
 											+ "| | |                      esse problema!                                                         | | |");
 							System.out.println(
 									"| | |                                                                                             | | |");
@@ -1971,6 +1996,9 @@ public class the_prison {
 								case "A":
 									if (alternativa1[0] == (" “ { ” e “ } ” ")) {
 										System.out.println("Resposta Correta.");
+										
+										
+										dificilQ1();
 										System.out.println("\n");
 										acertou = true;
 										total = ponto + pontoG;
@@ -1993,6 +2021,9 @@ public class the_prison {
 								case "B":
 									if (alternativa1[1] == (" “ { ” e “ } ” ")) {
 										System.out.println("Resposta Correta.");
+										
+										
+										dificilQ1();
 										System.out.println("\n");
 										acertou = true;
 										total = ponto + pontoG;
@@ -2015,6 +2046,9 @@ public class the_prison {
 								case "C":
 									if (alternativa1[2] == (" “ { ” e “ } ” ")) {
 										System.out.println("Resposta Correta.");
+										
+										
+										dificilQ1();
 										System.out.println("\n");
 										acertou = true;
 										total = ponto + pontoG;
@@ -2037,6 +2071,9 @@ public class the_prison {
 								case "D":
 									if (alternativa1[3] == (" “ { ” e “ } ” ")) {
 										System.out.println("Resposta Correta.");
+										
+										
+										dificilQ1();
 										System.out.println("\n");
 										acertou = true;
 										total = ponto + pontoG;
@@ -2059,6 +2096,9 @@ public class the_prison {
 								case "E":
 									if (alternativa1[4] == (" “ { ” e “ } ” ")) {
 										System.out.println("Resposta Correta.");
+										
+										
+										dificilQ1();
 										System.out.println("\n");
 										acertou = true;
 										total = ponto + pontoG;
@@ -2125,7 +2165,7 @@ public class the_prison {
 								System.out.println(
 										"| | |                                                                                             | | |");
 								System.out.println(
-										"| | | (Guarda)Mark Zuckerberg: Minha filha está tendo problemas para resolver um                  | | |\r\n"
+										"| | | (Guarda) Marcos Zuckerberg: Minha filha está tendo problemas para resolver um                  | | |\r\n"
 												+ "| | |                          exercício da escola, me ajude com isto e posso                     | | |\r\n"
 												+ "| | |                          conseguir com que você possa acessar outra ala da prisão,          | | |\r\n"
 												+ "| | |                          mas nada além disso, detento!                                      | | |");
@@ -2174,6 +2214,9 @@ public class the_prison {
 									case "A":
 										if (alternativa2[0] == ("21")) {
 											System.out.println("Resposta Correta.");
+											
+											
+											dificilQ2();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -2196,6 +2239,9 @@ public class the_prison {
 									case "B":
 										if (alternativa2[1] == ("21")) {
 											System.out.println("Resposta Correta.");
+											
+											
+											dificilQ2();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -2218,6 +2264,9 @@ public class the_prison {
 									case "C":
 										if (alternativa2[2] == ("21")) {
 											System.out.println("Resposta Correta.");
+											
+											
+											dificilQ2();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -2240,6 +2289,9 @@ public class the_prison {
 									case "D":
 										if (alternativa2[3] == ("21")) {
 											System.out.println("Resposta Correta.");
+											
+											
+											dificilQ2();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -2262,6 +2314,9 @@ public class the_prison {
 									case "E":
 										if (alternativa2[4] == ("21")) {
 											System.out.println("Resposta Correta.");
+											
+											
+											dificilQ2();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -2318,7 +2373,8 @@ public class the_prison {
 										"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
 								System.out.println(
 										"| | |                                                                                             | | |");
-								System.out.println("| | | (Guarda)  ");
+								System.out.println("| | | (Guarda) Turing: Algoritmo? este nome me parece familiar...                 | | |\\r\\n\"\r\n" 
+										          +"| | |                      pode refrescar minha memória?   ");
 								System.out.println(
 										"| | |                                                                                             | | |");
 								System.out.println(
@@ -2353,6 +2409,9 @@ public class the_prison {
 									case "A":
 										if (alternativa3[0] == ("if; if ... else; switch.")) {
 											System.out.println("Resposta Correta.");
+											
+											
+											dificilQ3();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -2375,6 +2434,9 @@ public class the_prison {
 									case "B":
 										if (alternativa3[1] == ("if; if ... else; switch.")) {
 											System.out.println("Resposta Correta.");
+											
+											
+											dificilQ3();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -2397,6 +2459,9 @@ public class the_prison {
 									case "C":
 										if (alternativa3[2] == ("if; if ... else; switch.")) {
 											System.out.println("Resposta Correta.");
+											
+											
+											dificilQ3();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -2419,6 +2484,9 @@ public class the_prison {
 									case "D":
 										if (alternativa3[3] == ("if; if ... else; switch.")) {
 											System.out.println("Resposta Correta.");
+											
+											
+											dificilQ3();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -2441,6 +2509,9 @@ public class the_prison {
 									case "E":
 										if (alternativa3[4] == ("if; if ... else; switch.")) {
 											System.out.println("Resposta Correta.");
+											
+											
+											dificilQ3();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -2488,7 +2559,7 @@ public class the_prison {
 								alternativa4[1] = "128 a 127. "; 
 								alternativa4[2] = "32768 a 32767. ";
 								alternativa4[3] = "9223372036854775808 a 9223372036854775807. ";
-								alternativa4[4] = "2147483648 a 2147483647. ";// Resposta correta
+								alternativa4[4] = "2147483648 a 2147483647. ";//RESPOSTA CORRETA
 
 								System.out.println("\n");
 								System.out.println(
@@ -2532,6 +2603,9 @@ public class the_prison {
 									case "A":
 										if (alternativa4[0] == (" 2147483648 a 2147483647.")) {
 											System.out.println("Resposta Correta.");
+											
+											
+											dificilQ4();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -2554,6 +2628,9 @@ public class the_prison {
 									case "B":
 										if (alternativa4[1] == ("2147483648 a 2147483647. ")) {
 											System.out.println("Resposta Correta.");
+											
+											
+											dificilQ4();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -2576,6 +2653,9 @@ public class the_prison {
 									case "C":
 										if (alternativa4[2] == (" 2147483648 a 2147483647.")) {
 											System.out.println("Resposta Correta.");
+											
+											
+											dificilQ4();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -2598,6 +2678,9 @@ public class the_prison {
 									case "D":
 										if (alternativa4[3] == (" 2147483648 a 2147483647.")) {
 											System.out.println("Resposta Correta.");
+											
+											
+											dificilQ4();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -2620,6 +2703,9 @@ public class the_prison {
 									case "E":
 										if (alternativa4[4] == ("2147483648 a 2147483647. ")) {
 											System.out.println("Resposta Correta.");
+											
+											
+											dificilQ4();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -2721,6 +2807,9 @@ public class the_prison {
 									case "A":
 										if (alternativa5[0] == ("0")) {
 											System.out.println("Resposta Correta.");
+											
+											
+											dificilQ5();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -2743,6 +2832,9 @@ public class the_prison {
 									case "B":
 										if (alternativa5[1] == ("0")) {
 											System.out.println("Resposta Correta.");
+											
+											
+											dificilQ5();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -2765,6 +2857,9 @@ public class the_prison {
 									case "C":
 										if (alternativa5[2] == ("0")) {
 											System.out.println("Resposta Correta.");
+											
+											
+											dificilQ5();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -2787,6 +2882,9 @@ public class the_prison {
 									case "D":
 										if (alternativa5[3] == ("0")) {
 											System.out.println("Resposta Correta.");
+											
+											
+											dificilQ5();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -2809,6 +2907,9 @@ public class the_prison {
 									case "E":
 										if (alternativa5[4] == ("0")) {
 											System.out.println("Resposta Correta.");
+											
+											
+											dificilQ5();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
