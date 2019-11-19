@@ -131,14 +131,11 @@ public class the_prison {
 	
 	//FUÇÃO DO FEEDBACK: DIFÍCIL
 		static void dificilQ1 () {
-				System.out.println(" feedback\r\n" + 
-						"							 Um bloco é definido por ({}) e contém um grupo de outros blocos. Quando um\r\n" + 
-						"							 novo\r\n" + 
-						"							 bloco é criado um novo escopo local é aberto e permite a definição de\r\n" + 
-						"							 variáveis locais. As\r\n" + 
-						"							 variáveis definidas dentro de um bloco só podem ser vistas internamente a\r\n" + 
-						"							 este, e são\r\n" + 
-						"							 terminadas ou extintas no final da execução deste(}).");
+		System.out.println("FeedBack\r\n" 
+				+ "Resposta Correta - Um bloco é definido por ({}) e contém um grupo de outros blocos. \r\n" 
+				+ "Quando um novo bloco é criado um novo escopo local é aberto e permite a definição de\r\n" 
+				+ "variáveis locais. As variáveis definidas dentro de um bloco só podem ser vistas \r\n" 
+				+ "internamente a este, e são terminadas ou extintas no final da execução deste(}).");
 		}
 		static void dificilQ2 () {
 				System.out.println("");
