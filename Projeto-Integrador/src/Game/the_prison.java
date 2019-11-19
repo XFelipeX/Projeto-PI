@@ -138,16 +138,21 @@ public class the_prison {
 				+ "internamente a este, e são terminadas ou extintas no final da execução deste(}).");
 		}
 		static void dificilQ2 () {
-				System.out.println("");
+				System.out.println("FeedBack\r\n" 
+				+ "Resposta Correta - ");
 		}
 		static void dificilQ3 () {
-				System.out.println("");
+				System.out.println("FeedBack\r\n"
+				+ "Resposta Correta - ");
 		}
 		static void dificilQ4 () {
-				System.out.println("");
+				System.out.println("FeedBack\r\n"
+				+ "Resposta Correta - A variável do tipo 'int'armazena 32 bits, ou qualquer inteiro \r\n"
+				+ "entre -2.147.483.648 e 2.147.483.647");
 		}
 		static void dificilQ5 () {
-				System.out.println("");
+				System.out.println("FeedBack\r\n"
+				+ "Resposta Correta - ");
 		}
 	
 	public static void main(String[] args) {
@@ -2591,11 +2596,11 @@ public class the_prison {
 								contador = 0;
 
 								String alternativa4[] = new String[5];
-								alternativa4[0] = "8388608 a 8388607. ";
-								alternativa4[1] = "128 a 127. "; 
-								alternativa4[2] = "32768 a 32767. ";
-								alternativa4[3] = "9223372036854775808 a 9223372036854775807. ";
-								alternativa4[4] = "2147483648 a 2147483647. ";//RESPOSTA CORRETA
+								alternativa4[0] = "-8388608 a 8388607. ";
+								alternativa4[1] = "-128 a 127. "; 
+								alternativa4[2] = "-32768 a 32767. ";
+								alternativa4[3] = "-9223372036854775808 a 9223372036854775807. ";
+								alternativa4[4] = "-2147483648 a 2147483647.";//RESPOSTA CORRETA
 
 								System.out.println("\n");
 								System.out.println(
@@ -2637,7 +2642,7 @@ public class the_prison {
 									switch (resposta) {
 									case "a":
 									case "A":
-										if (alternativa4[0] == (" 2147483648 a 2147483647.")) {
+										if (alternativa4[0] == ("-2147483648 a 2147483647.")) {
 											System.out.println("Resposta Correta.");
 											
 											
@@ -2662,7 +2667,7 @@ public class the_prison {
 										break;
 									case "b":
 									case "B":
-										if (alternativa4[1] == ("2147483648 a 2147483647. ")) {
+										if (alternativa4[1] == ("-2147483648 a 2147483647.")) {
 											System.out.println("Resposta Correta.");
 											
 											
@@ -2687,7 +2692,7 @@ public class the_prison {
 										break;
 									case "c":
 									case "C":
-										if (alternativa4[2] == (" 2147483648 a 2147483647.")) {
+										if (alternativa4[2] == ("-2147483648 a 2147483647.")) {
 											System.out.println("Resposta Correta.");
 											
 											
@@ -2712,7 +2717,7 @@ public class the_prison {
 										break;
 									case "d":
 									case "D":
-										if (alternativa4[3] == (" 2147483648 a 2147483647.")) {
+										if (alternativa4[3] == ("-2147483648 a 2147483647.")) {
 											System.out.println("Resposta Correta.");
 											
 											
@@ -2737,7 +2742,7 @@ public class the_prison {
 										break;
 									case "e":
 									case "E":
-										if (alternativa4[4] == ("2147483648 a 2147483647. ")) {
+										if (alternativa4[4] == ("-2147483648 a 2147483647.")) {
 											System.out.println("Resposta Correta.");
 											
 											
