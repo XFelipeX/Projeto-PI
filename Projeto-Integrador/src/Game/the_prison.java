@@ -89,7 +89,7 @@ public class the_prison {
 		}
 
 	}
-	//FUÇÃO DO FEEDBACK: FÁCIL
+	//FUNÇÃO DO FEEDBACK: FÁCIL
 	static void facilQ1 () {
 		System.out.println("FeedBack:\r\n"
 				+ "Resposta Correta - Do/While.\r\n"
@@ -127,9 +127,45 @@ public class the_prison {
 				+ "n3<-- n1-2+n2;  (n3<-- 10-2+30) sendo assim n3=38");
 		
 	}
-	//FUÇÃO DO FEEDBACK: NORMAL
+	//FUNÇÃO DO FEEDBACK: NORMAL
+	static void normalQ1 () {
+		System.out.println("FeedBack\r\n" 
+				+ "Resposta Correta - Double. \r\n" 
+				+ "Uma variável é do tipo flutuante quando o valor usado não for um número inteiro.\r\n" 
+				+ "Podendo conter casas decimais depois do ponto ou virgula, dando significado ao nome em si. \r\n");
+		}
+	static void normalQ2 () {
+		System.out.println("FeedBack\r\n" 
+				+ "Resposta Correta - boolean, double, float e byte. \r\n" 
+				+ "Como tipos primitivos entendemos aqueles tipos de informação mais usuais e básicos. \r\n"
+				+ "São os habituais de outras linguagens de programação.\r\n"); 
+				
+		}
+	static void normalQ3 () {
+		System.out.println("FeedBack\r\n" 
+				+ "Resposta Correta - 50 \r\n" 
+				+ "A classe math.pow efetua potência no java.\r\n"
+				+ "No exercicio a variável A recebe 10 e B recebe 2.\r\n"
+				+ "Ficando assim: math.pow(10,2)/2 \r\n"
+				+ "10 elevado a 2 é igual a 100, dividindo por 2 resulta em 50. \r\n");
+	}
+	static void normalQ4 () {
+		System.out.println("FeedBack\r\n" 
+				+ "Resposta Correta - 15 \r\n" 
+				+ "Se a variável valor1 recebe 10 e a variável valor2 recebe 20.\r\n"
+				+ "Então valor2 é maior do que valor1.\r\n"
+				+ "Executa-se o que está dentro de SE. \r\n"
+				+ "valor1(10)+valor2(20) é igual a 30 e dividi por 2 resultando em 15. \r\n");
+	}
+	static void normalQ5 () {
+		System.out.println("FeedBack\r\n" 
+				+ "Resposta Correta - Sequência de passos lógicos \r\n" 
+				+ "Algoritmo é simplesmente uma \"receita\" para executarmos uma tarefa ou resolver algum problema.\r\n"
+				+ "E como toda receita, um algoritmo também deve ser finito.\r\n"
+				+ "Se seguirmos uma receita de bolo corretamente, conseguiremos fazer o bolo. \r\n");
+	}
 	
-	//FUÇÃO DO FEEDBACK: DIFÍCIL
+	//FUNÇÃO DO FEEDBACK: DIFÍCIL
 		static void dificilQ1 () {
 		System.out.println("FeedBack\r\n" 
 				+ "Resposta Correta - Um bloco é definido por ({}) e contém um grupo de outros blocos. \r\n" 
@@ -280,7 +316,7 @@ public class the_prison {
 							System.out.println(
 									"| | |                                                                                             | | |");
 							System.out.println(
-									"| | | (Guarda) Bill Gates: Está com dificuldades na faculdade, ajude ele a solucionar             | | |\r\n"
+									"| | | (Guarda) José Gates: Está com dificuldades na faculdade, ajude ele a solucionar             | | |\r\n"
 											+ "| | |                      esse problema!                                                         | | |");
 							System.out.println(
 									"| | |                                                                                             | | |");
@@ -426,8 +462,8 @@ public class the_prison {
 							if (acertou == false) {
 //funcao questao 1									
 								facilQ1();
-								System.out.println("GAME OVER.");
-								perdeu(exit);
+								game_over();
+								sair= perdeu(sair);
 								break;
 
 							}
@@ -454,7 +490,7 @@ public class the_prison {
 								System.out.println(
 										"| | |                                                                                             | | |");
 								System.out.println(
-										"| | | (Guarda)Mark Zuckerberg: Minha filha está tendo problemas para resolver um                  | | |\r\n"
+										"| | | (Guarda) Márcio Zuckerberg: Minha filha está tendo problemas para resolver um               | | |\r\n"
 												+ "| | |                          exercício da escola, me ajude com isto e posso                     | | |\r\n"
 												+ "| | |                          conseguir com que você possa acessar outra ala da prisão,          | | |\r\n"
 												+ "| | |                          mas nada além disso detento!                                       | | |");
@@ -597,7 +633,8 @@ public class the_prison {
 								} while (!acertou && contador <= 2);
 								if (acertou == false) {
 									facilQ2();
-									System.out.println("GAME OVER.");
+									game_over();
+									sair= perdeu(sair);
 									break;
 
 								}
@@ -626,7 +663,7 @@ public class the_prison {
 								System.out.println(
 										"| | |                                                                                             | | |");
 								System.out.println(
-										"| | | (Guarda)Alan Turing: Algoritmo? este nome me parece familiar...                             | | |\r\n"
+										"| | | (Guarda) Erick Turing: Algoritmo? este nome me parece familiar...                             | | |\r\n"
 												+ "| | |                      pode refrescar minha memória?                                          | | |");
 								System.out.println(
 										"| | |                                                                                             | | |");
@@ -768,7 +805,8 @@ public class the_prison {
 								} while (!acertou && contador <= 2);
 								if (acertou == false) {
 									facilQ3();
-									System.out.println("GAME OVER.");
+									game_over();
+									sair= perdeu(sair);
 									break;
 
 								}
@@ -796,7 +834,7 @@ public class the_prison {
 										"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
 								System.out.println(
 										"| | |                                                                                             | | |");
-								System.out.println("| | | (Guarda) Steve Jobs ...");
+								System.out.println("| | | (Guarda) Alan Jobs ...");
 								System.out.println(
 										"| | |                                                                                             | | |");
 								System.out.println(
@@ -947,7 +985,8 @@ public class the_prison {
 								} while (!acertou && contador <= 2);
 								if (acertou == false) {
 									facilQ4();
-									System.out.println("GAME OVER.");
+									game_over();
+									sair= perdeu(sair);
 									break;
 
 								}
@@ -975,7 +1014,7 @@ public class the_prison {
 										"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
 								System.out.println(
 										"| | |                                                                                             | | |");
-								System.out.println("| | | (Diretor) Gavin Belson... ");
+								System.out.println("| | | (Diretor) João Belson... ");
 								System.out.println(
 										"| | |                                                                                             | | |");
 								System.out.println(
@@ -1128,7 +1167,8 @@ public class the_prison {
 								} while (!acertou && contador <= 2);
 								if (acertou == false) {
 									facilQ5();
-									System.out.println("GAME OVER.");
+									game_over();
+									sair= perdeu(sair);
 									break;
 
 								}
@@ -1164,7 +1204,7 @@ public class the_prison {
 							System.out.println(
 									"| | |                                                                                             | | |");
 							System.out.println(
-									"| | | (Guarda) Bill Gates: Está com dificuldades na faculdade, ajude ele a solucionar             | | |\r\n"
+									"| | | (Guarda) José Gates: Está com dificuldades na faculdade, ajude ele a solucionar             | | |\r\n"
 											+ "| | |                      esse problema!                                                         | | |");
 							System.out.println(
 									"| | |                                                                                             | | |");
@@ -1193,6 +1233,7 @@ public class the_prison {
 								case "A":
 									if (alternativa1[0] == ("double.")) {
 										System.out.println("Resposta Correta.");
+										normalQ1();
 										System.out.println("\n");
 										acertou = true;
 										total = ponto + pontoG;
@@ -1213,6 +1254,7 @@ public class the_prison {
 								case "B":
 									if (alternativa1[1].equals("double.")) {
 										System.out.println("Resposta Correta.");
+										normalQ1();
 										System.out.println("\n");
 										acertou = true;
 										total = ponto + pontoG;
@@ -1233,6 +1275,7 @@ public class the_prison {
 								case "C":
 									if (alternativa1[2].equals("double.")) {
 										System.out.println("Resposta Correta.");
+										normalQ1();
 										System.out.println("\n");
 										acertou = true;
 										total = ponto + pontoG;
@@ -1253,6 +1296,7 @@ public class the_prison {
 								case "D":
 									if (alternativa1[3].equals("double.")) {
 										System.out.println("Resposta Correta.");
+										normalQ1();
 										System.out.println("\n");
 										acertou = true;
 										total = ponto + pontoG;
@@ -1273,6 +1317,7 @@ public class the_prison {
 								case "E":
 									if (alternativa1[4].equals("double.")) {
 										System.out.println("Resposta Correta.");
+										normalQ1();
 										System.out.println("\n");
 										acertou = true;
 										total = ponto + pontoG;
@@ -1297,7 +1342,8 @@ public class the_prison {
 								contador++;
 							} while (!acertou && contador <= 2);
 							if (acertou == false) {
-								System.out.println("GAME OVER.");
+								normalQ1();
+								game_over();
 								sair= perdeu(sair);
 								break;
 
@@ -1326,7 +1372,7 @@ public class the_prison {
 								System.out.println(
 										"| | |                                                                                             | | |");
 								System.out.println(
-										"| | | (Guarda)Mark Zuckerberg: Minha filha está tendo problemas para resolver um                  | | |\r\n"
+										"| | | (Guarda)Márcio Zuckerberg: Minha filha está tendo problemas para resolver um                  | | |\r\n"
 												+ "| | |                          exercício da escola, me ajude com isto e posso                     | | |\r\n"
 												+ "| | |                          conseguir com que você possa acessar outra ala da prisão,          | | |\r\n"
 												+ "| | |                          mas nada além disso, detento!                                      | | |");
@@ -1358,6 +1404,7 @@ public class the_prison {
 									case "A":
 										if (alternativa2[0] == ("boolean, double, float e byte.")) {
 											System.out.println("Resposta Correta.");
+											normalQ2();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG; //
@@ -1378,6 +1425,7 @@ public class the_prison {
 									case "B":
 										if (alternativa2[1] == ("boolean, double, float e byte.")) {
 											System.out.println("Resposta Correta.");
+											normalQ2();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -1398,6 +1446,7 @@ public class the_prison {
 									case "C":
 										if (alternativa2[2] == ("boolean, double, float e byte.")) {
 											System.out.println("Resposta Correta.");
+											normalQ2();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -1418,6 +1467,7 @@ public class the_prison {
 									case "D":
 										if (alternativa2[3] == ("boolean, double, float e byte.")) {
 											System.out.println("Resposta Correta.");
+											normalQ2();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -1438,6 +1488,7 @@ public class the_prison {
 									case "E":
 										if (alternativa2[4] == ("boolean, double, float e byte.")) {
 											System.out.println("Resposta Correta.");
+											normalQ2();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -1462,7 +1513,8 @@ public class the_prison {
 									contador++;
 								} while (!acertou && contador <= 2);
 								if (acertou == false) {
-									System.out.println("GAME OVER.");
+									normalQ2();
+									game_over();
 									sair= perdeu(sair);
 									break;
 
@@ -1493,7 +1545,7 @@ public class the_prison {
 								System.out.println(
 										"| | |                                                                                             | | |");
 								System.out.println(
-										"| | | (Guarda)Alan Turing: Algoritmo? este nome me parece familiar...                             | | |\r\n"
+										"| | | (Guarda)Erick Turing: Algoritmo? este nome me parece familiar...                             | | |\r\n"
 												+ "| | |                      pode refrescar minha memória?                                          | | |");
 								System.out.println(
 										"| | |                                                                                             | | |");
@@ -1527,6 +1579,7 @@ public class the_prison {
 									case "A":
 										if (alternativa3[0] == ("50")) {
 											System.out.println("Resposta Correta.");
+											normalQ3();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG; //
@@ -1547,6 +1600,7 @@ public class the_prison {
 									case "B":
 										if (alternativa3[1] == ("50")) {
 											System.out.println("Resposta Correta.");
+											normalQ3();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -1567,6 +1621,7 @@ public class the_prison {
 									case "C":
 										if (alternativa3[2] == ("50")) {
 											System.out.println("Resposta Correta.");
+											normalQ3();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -1587,6 +1642,7 @@ public class the_prison {
 									case "D":
 										if (alternativa3[3] == ("50")) {
 											System.out.println("Resposta Correta.");
+											normalQ3();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -1607,6 +1663,7 @@ public class the_prison {
 									case "E":
 										if (alternativa3[4] == ("50")) {
 											System.out.println("Resposta Correta.");
+											normalQ3();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -1630,7 +1687,8 @@ public class the_prison {
 									contador++;
 								} while (!acertou && contador <= 2);
 								if (acertou == false) {
-									System.out.println("GAME OVER.");
+									normalQ3();
+									game_over();
 									sair= perdeu(sair);
 									break;
 
@@ -1661,8 +1719,8 @@ public class the_prison {
 								System.out.println(
 										"| | |                                                                                             | | |");
 								System.out.println(
-										"| | | (Guarda) Steve está com duvidas sobre uma código. Detento me ajude "
-												+ "e vou te liberar para próximo nível  ...");
+										"| | | (Guarda) Alan Jobs está com duvidas em um determinado código; Detento me ajude "
+												+ "e vou te liberar para o próximo nível  ...");
 								System.out.println(
 										"| | |                                                                                             | | |");
 								System.out.println(
@@ -1673,7 +1731,6 @@ public class the_prison {
 
 								do {
 									embaralhar(alternativa4);
-
 									System.out.println("Analise o trecho do algoritmo abaixo.\r\n" + "\r\n"
 											+ "Algoritimo\r\n" + "Var\r\n" + "valor1, valor2 :inteiro\r\n"
 											+ "Inicio\r\n" + "valor1 <- 10\r\n" + "valor2 <- 20\r\n"
@@ -1699,6 +1756,7 @@ public class the_prison {
 									case "A":
 										if (alternativa4[0] == ("15")) {
 											System.out.println("Resposta Correta.");
+											normalQ4();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -1719,6 +1777,7 @@ public class the_prison {
 									case "B":
 										if (alternativa4[1] == ("15")) {
 											System.out.println("Resposta Correta.");
+											normalQ4();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -1739,6 +1798,7 @@ public class the_prison {
 									case "C":
 										if (alternativa4[2] == ("15")) {
 											System.out.println("Resposta Correta.");
+											normalQ4();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -1759,6 +1819,7 @@ public class the_prison {
 									case "D":
 										if (alternativa4[3] == ("15")) {
 											System.out.println("Resposta Correta.");
+											normalQ4();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -1779,6 +1840,7 @@ public class the_prison {
 									case "E":
 										if (alternativa4[4] == ("15")) {
 											System.out.println("Resposta Correta.");
+											normalQ4();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -1804,7 +1866,8 @@ public class the_prison {
 								} while ((!acertou) && (contador <= 2));
 
 								if (acertou == false) {
-									System.out.println("GAME OVER.");
+									normalQ4();
+									game_over();
 									sair= perdeu(sair);
 									break;
 								}
@@ -1833,7 +1896,8 @@ public class the_prison {
 										"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
 								System.out.println(
 										"| | |                                                                                             | | |");
-								System.out.println("| | | (Diretor) Gavin Belson... ");
+								System.out.println("| | | (Diretor) João Belson: Um forasteiro! como ousa vir tão longe, achou mesmo \"\r\n" + 
+										"+ \"que iria tão longe sem ser pego? não fique triste... lembre-se que todo fim tem um novo começo muahahaha!! ");
 								System.out.println(
 										"| | |                                                                                             | | |");
 								System.out.println(
@@ -1862,6 +1926,7 @@ public class the_prison {
 									case "A":
 										if (alternativa5[0] == ("Sequência de passos lógicos.")) {
 											System.out.println("Resposta Correta! ");
+											normalQ5();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -1882,6 +1947,7 @@ public class the_prison {
 									case "B":
 										if (alternativa5[1] == ("Sequência de passos lógicos.")) {
 											System.out.println("Resposta Correta!");
+											normalQ5();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -1902,6 +1968,7 @@ public class the_prison {
 									case "C":
 										if (alternativa5[2] == ("Sequência de passos lógicos.")) {
 											System.out.println("Resposta Correta!");
+											normalQ5();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -1922,6 +1989,7 @@ public class the_prison {
 									case "D":
 										if (alternativa5[3] == ("Sequência de passos lógicos.")) {
 											System.out.println("Resposta Correta!");
+											normalQ5();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -1942,6 +2010,7 @@ public class the_prison {
 									case "E":
 										if (alternativa5[4] == ("Sequência de passos lógicos.")) {
 											System.out.println("Resposta Correta!");
+											normalQ5();
 											System.out.println("\n");
 											acertou = true;
 											total = ponto + pontoG;
@@ -1966,7 +2035,8 @@ public class the_prison {
 									contador++;
 								} while (!acertou && contador <= 2);
 								if (acertou == false) {
-									System.out.println("GAME OVER.");
+									normalQ5();
+									game_over();
 									sair= perdeu(sair);
 									break;
 
@@ -2167,7 +2237,8 @@ public class the_prison {
 							} while ((!acertou) && (contador <= 2));
 
 							if (acertou == false) {
-								System.out.println("GAME OVER.");
+								game_over();
+								sair= perdeu(sair);
 								break;
 							}
 
@@ -2206,7 +2277,7 @@ public class the_prison {
 								System.out.println(
 										"| | |                                                                                             | | |");
 								System.out.println(
-										"| | | (Guarda) Marcos Zuckerberg: Minha filha está tendo problemas para resolver um                  | | |\r\n"
+										"| | | (Guarda) Márcio Zuckerberg: Minha filha está tendo problemas para resolver um                  | | |\r\n"
 												+ "| | |                          exercício da escola, me ajude com isto e posso                     | | |\r\n"
 												+ "| | |                          conseguir com que você possa acessar outra ala da prisão,          | | |\r\n"
 												+ "| | |                          mas nada além disso, detento!                                      | | |");
@@ -2385,7 +2456,8 @@ public class the_prison {
 								} while ((!acertou) && (contador <= 2));
 
 								if (acertou == false) {
-									System.out.println("GAME OVER.");
+									game_over();
+									sair= perdeu(sair);
 									break;
 								}
 							}
@@ -2414,7 +2486,7 @@ public class the_prison {
 										"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
 								System.out.println(
 										"| | |                                                                                             | | |");
-								System.out.println("| | | (Guarda) Turing: Algoritmo? este nome me parece familiar...                 | | |\\r\\n\"\r\n" 
+								System.out.println("| | | (Guarda) Erick Turing: Algoritmo? este nome me parece familiar...                | | |\\r\\n\"\r\n" 
 										          +"| | |                      pode refrescar minha memória?   ");
 								System.out.println(
 										"| | |                                                                                             | | |");
@@ -2580,7 +2652,8 @@ public class the_prison {
 								} while ((!acertou) && (contador <= 2));
 
 								if (acertou == false) {
-									System.out.println("GAME OVER.");
+									game_over();
+									sair= perdeu(sair);
 									break;
 								}
 							}
@@ -2609,7 +2682,7 @@ public class the_prison {
 										"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
 								System.out.println(
 										"| | |                                                                                             | | |");
-								System.out.println("| | | (Guarda) José Jobs: ZzzZzZZz      ZzzZzzZ   huur "
+								System.out.println("| | | (Guarda) Alan Jobs: ZzzZzZZz      ZzzZzzZ   huur "
 										+ "Verme insolente, me acordou e acha que vai sair desta tão fácil assim? ");
 								System.out.println(
 										"| | |                                                                                             | | |");
@@ -2774,7 +2847,8 @@ public class the_prison {
 								} while ((!acertou) && (contador <= 2));
 
 								if (acertou == false) {
-									System.out.println("GAME OVER.");
+									game_over();
+									sair= perdeu(sair);
 									break;
 								}
 							}
@@ -2803,7 +2877,7 @@ public class the_prison {
 										"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
 								System.out.println(
 										"| | |                                                                                             | | |");
-								System.out.println("| | | (Diretor) Gavin Belson: Um forasteiro! como ousa vir tão longe, achou mesmo "
+								System.out.println("| | | (Diretor) João Belson: Um forasteiro! como ousa vir tão longe, achou mesmo "
 										+ "que iria tão longe sem ser pego? não fique triste... lembre-se que todo fim tem um novo começo muahahaha!! ");
 								System.out.println(
 										"| | |                                                                                             | | |");
@@ -2978,7 +3052,7 @@ public class the_prison {
 								} while ((!acertou) && (contador <= 2));
 
 								if (acertou == false) {
-									System.out.println("GAME OVER.");
+									game_over();
 									sair= perdeu(sair);
 									break;
 								}
