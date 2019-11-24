@@ -179,7 +179,34 @@ public class the_prison {
 		}
 		static void dificilQ3 () {
 				System.out.println("FeedBack\r\n"
-				+ "Resposta Correta - ");
+				+ "Resposta Correta - A instrução de seleção única if, também conhecida por if-then, possibilita a execução condicional de um bloco de instruções.\r\n" + 
+				"\r\n" + 
+				"if (expressaoBooleana) {\r\n" + 
+				"    //instruções que serão executadas caso a expressaoBooleana resulte true.\r\n" + 
+				"}\r\n" + 
+				"\r\n" + 
+				"Também conhecida como instrução if-then-else, a instrução de seleção dupla if...else tem função complementar \r\n" + 
+				"à de if: executa instruções no caso da expressão booleana de if resultar em false.\r\n" + 
+				"\r\n" + 
+				"if (expressaoBooleana) {\r\n" + 
+				"    //instruções que serão executadas caso a expressaoBooleana resulte true.\r\n" + 
+				"} else {\r\n" + 
+				"    //instruções que serão executadas caso a expressaoBooleana resulte false.\r\n" + 
+				"}\r\n" + 
+				"\r\n" + 
+				"A instrução switch por vezes chamada de switch...case possibilita a execução condicional de instruções de acordo com a \r\n" + 
+				"correspondência entre a expressão avaliada e a constante em case.\r\n" + 
+				"\r\n" + 
+				"switch (expressao) {\r\n" + 
+				"    case constante1: \r\n" + 
+				"        // Instruções\r\n" + 
+				"        break;\r\n" + 
+				"    case constante2: \r\n" + 
+				"        // Instruções\r\n" + 
+				"        break;\r\n" + 
+				"    case default: \r\n" + 
+				"        // Instruções\r\n" + 
+				"}");
 		}
 		static void dificilQ4 () {
 				System.out.println("FeedBack\r\n"
@@ -188,7 +215,7 @@ public class the_prison {
 		}
 		static void dificilQ5 () {
 				System.out.println("FeedBack\r\n"
-				+ "Resposta Correta - ");
+				+ "Resposta Correta - MULTIPLICAR um número por zero é o mesmo que subtrair dele mesmo. ");
 		}
 	
 	public static void main(String[] args) {
@@ -2682,7 +2709,7 @@ public class the_prison {
 										"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
 								System.out.println(
 										"| | |                                                                                             | | |");
-								System.out.println("| | | (Guarda) Alan Jobs: ZzzZzZZz      ZzzZzzZ   huur "
+								System.out.println("| | | (Guarda) Alan Jobs: ZzzZzZZzZzzZzzZ   huur "
 										+ "Verme insolente, me acordou e acha que vai sair desta tão fácil assim? ");
 								System.out.println(
 										"| | |                                                                                             | | |");
@@ -2877,7 +2904,7 @@ public class the_prison {
 										"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
 								System.out.println(
 										"| | |                                                                                             | | |");
-								System.out.println("| | | (Diretor) João Belson: Um forasteiro! como ousa vir tão longe, achou mesmo "
+								System.out.println("| | | (Diretor) João Belson: Um forasteiro! como ousa vir tão longe, achou mesmo\r\n "
 										+ "que iria tão longe sem ser pego? não fique triste... lembre-se que todo fim tem um novo começo muahahaha!! ");
 								System.out.println(
 										"| | |                                                                                             | | |");
