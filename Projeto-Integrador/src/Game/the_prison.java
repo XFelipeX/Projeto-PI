@@ -175,7 +175,7 @@ public class the_prison {
 		}
 		static void dificilQ2 () {
 				System.out.println("FeedBack\r\n" 
-				+ "Resposta Correta - RECURSIVA TRADICIONAL\r\n" + 
+				+ "Resposta Correta - Resposta correta 21 - RECURSIVA TRADICIONAL\r\n" + 
 				"Consiste na tradução direta da recorrência para um algoritmo recursivo.  ");
 		}
 		static void dificilQ3 () {
