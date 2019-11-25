@@ -175,7 +175,8 @@ public class the_prison {
 		}
 		static void dificilQ2 () {
 				System.out.println("FeedBack\r\n" 
-				+ "Resposta Correta - ");
+				+ "Resposta Correta - RECURSIVA TRADICIONAL\r\n" + 
+				"Consiste na tradução direta da recorrência para um algoritmo recursivo.  ");
 		}
 		static void dificilQ3 () {
 				System.out.println("FeedBack\r\n"
@@ -2325,7 +2326,7 @@ public class the_prison {
 													+ "        static long f (int n) {\r\n"
 													+ "              if (n < 2) {\r\n"
 													+ "                   return n;\r\n" + "              }else {\r\n"
-													+ "                  return f(n - 1) + f {n - 2);\r\n"
+													+ "                  return f(n - 1) + f (n - 2);\r\n"
 													+ "              }\r\n" + "        }\r\n"
 													+ "        public static void main(String[ ] args) {\r\n"
 													+ "        int i ;\r\n"
