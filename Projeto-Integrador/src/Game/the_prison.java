@@ -862,7 +862,8 @@ public class the_prison {
 										"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
 								System.out.println(
 										"| | |                                                                                             | | |");
-								System.out.println("| | | (Guarda) Alan Jobs ...");
+								System.out.println("| | | (Guarda) Alan Jobs: ZzzZzZZzZzzZzzZ   huur "
+										+ "Verme insolente, me acordou e acha que vai sair desta tão fácil assim? ");
 								System.out.println(
 										"| | |                                                                                             | | |");
 								System.out.println(
@@ -1042,7 +1043,8 @@ public class the_prison {
 										"| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |");
 								System.out.println(
 										"| | |                                                                                             | | |");
-								System.out.println("| | | (Diretor) João Belson... ");
+								System.out.println("| | | (Diretor) João Belson: Um forasteiro! como ousa vir tão longe, achou mesmo \"\r\n" + 
+										"+ \"que iria tão longe sem ser pego? não fique triste... lembre-se que todo fim tem um novo começo muahahaha!! ");
 								System.out.println(
 										"| | |                                                                                             | | |");
 								System.out.println(
@@ -1067,7 +1069,7 @@ public class the_prison {
 									System.out.println("e) " + alternativa5[4]);
 
 									System.out.println("\n");
-
+									System.out.print("Qual a alternativa certa?: ");
 									String resposta = input.next();
 
 									System.out.println("\n");
