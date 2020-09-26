@@ -29,7 +29,6 @@
 <ul>
   <li>O que é RPG?</li>
   <li>Jogabilidade.</li>
-  <li>Por que temática medieval.</li>
 </ul>
   
 <h2>Observar</h2>
